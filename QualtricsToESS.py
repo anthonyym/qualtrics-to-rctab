@@ -157,20 +157,6 @@ def qualtrics_to_ess(input_csv, progress_dialog):
         ballot_list_to_excel(convert_to_ballots(sub_df, progress_dialog), filepath, filename + '_' + election_name)
     return(output_folder)
 
-class SuccessWindow(wx.Dialog):
-    def __init__(self, output_dir, *args, **kwds):
-        wx.Dialog.__init__(self, *args, **kwds)
-        self.output_dir = output_dir
-
-    def show_ui(self):
-        self.button_candidate_file_browse = wx.Button(self, wx.ID_ANY, "Browse...")
-        self.Bind(wx.EVT_BUTTON, self.open_dir, self.button_candidate_file_browse)
-
-    def open_dir(self):
-        if platform.system() == "Windows":
-            os.startfile(self.output_dir)
-
-
 class WindowNew(wx.Dialog):
     def __init__(self, *args, **kwds):
         wx.Dialog.__init__(self, *args, **kwds)
@@ -208,7 +194,7 @@ class WindowNew(wx.Dialog):
         self.SetTitle("Qualtrics CSV to ESS/CVR Excel Converter")
 
     def ui_browse_candidate_file(self, event):
-        election_candidate_file = wx.FileDialog(self, "", "", "", "CSV file (*.csv)|*.csv|All files|*.*", wx.FD_OPEN | wx.FD_FILE_MUST_EXIST)
+        election_candidate_file = wx.FileDialog(self, "", os.getcwd(), "", "CSV file (*.csv)|*.csv|All files|*.*", wx.FD_OPEN | wx.FD_FILE_MUST_EXIST)
         if election_candidate_file.ShowModal() == wx.ID_CANCEL:
             return
         self.set_candidate_file(election_candidate_file.GetPath())
