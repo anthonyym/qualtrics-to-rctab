@@ -224,6 +224,8 @@ class WindowNew(wx.Dialog):
         if wx.MessageDialog(self, "Conversion successful. \n\nOutputted to: \n\n" + output_dir, caption="Open outuptted files?", style=wx.YES_NO | wx.YES_DEFAULT | wx.ICON_QUESTION).ShowModal() == wx.ID_YES:
             if platform.system() == "Windows":
                 os.startfile(output_dir)
+        
+        self.Close()
 
     def ui_check_complete(self):
         self.button_create.Enable(not not (self.candidate_file))
