@@ -5,6 +5,9 @@ import json
 import platform
 from collections import OrderedDict
 
+# row in df containing json values (e.g. {"ImportId": QID1_1}) - note Pandas take first row as headers
+json_row_num = 1
+
 def ballot_list_to_excel(ballots, file_path, file_name):
     """Takes in the ballots, which are a list of lists, and writes to an excel sheet in election ESS CVR format"""
         
@@ -112,8 +115,6 @@ def qualtrics_to_ess(input_csv, progress_dialog, output_dir):
 
     # get indices of question columns (column name starts with Q and contains underscore)
     qcol_idx_list = []
-    # row in df containing json values (e.g. {"ImportId": QID1_1}) - note Pandas take first row as headers
-    json_row_num = 1
     # check the third row containing json values 
     json_row = df.iloc[json_row_num].values
 
@@ -215,17 +216,45 @@ class WindowNew(wx.Dialog):
         self.text_ctrl_candidate_file.SetValue(self.candidate_file)
 
     def ui_convert(self, event):
-        progress_dialog = wx.ProgressDialog("Processing Ballots", "", maximum=self.max_progress_dialog_value, parent=self, style=wx.PD_APP_MODAL | wx.PD_AUTO_HIDE | wx.PD_ELAPSED_TIME | wx.PD_ESTIMATED_TIME | wx.PD_REMAINING_TIME)
-        progress_dialog.Fit()
-        output_dir = qualtrics_to_ess(self.candidate_file, progress_dialog, self.m_dirPicker1.GetPath())
-        progress_dialog.Update(self.max_progress_dialog_value)
-        progress_dialog.Destroy()
+        if not self.is_valid_csv(self.candidate_file):
+            wx.MessageDialog(self, "Unable to load Qualtrics CSV file. Please verify that the file specified is the correct file.", caption="Load Error", style=wx.OK | wx.ICON_ERROR | wx.CENTRE).ShowModal()
+        else:
+            try:
+                progress_dialog = wx.ProgressDialog("Processing Ballots", "", maximum=self.max_progress_dialog_value, parent=self, style=wx.PD_APP_MODAL | wx.PD_AUTO_HIDE | wx.PD_ELAPSED_TIME | wx.PD_ESTIMATED_TIME | wx.PD_REMAINING_TIME)
+                progress_dialog.Fit()
+                output_dir = qualtrics_to_ess(self.candidate_file, progress_dialog, self.m_dirPicker1.GetPath())
+                progress_dialog.Update(self.max_progress_dialog_value)
+                progress_dialog.Destroy()
+                
+                if wx.MessageDialog(self, "Conversion successful. \n\nOutputted to: \n\n" + output_dir, caption="Open outuptted files?", style=wx.YES_NO | wx.YES_DEFAULT | wx.ICON_QUESTION).ShowModal() == wx.ID_YES:
+                    if platform.system() == "Windows":
+                        os.startfile(output_dir)
         
-        if wx.MessageDialog(self, "Conversion successful. \n\nOutputted to: \n\n" + output_dir, caption="Open outuptted files?", style=wx.YES_NO | wx.YES_DEFAULT | wx.ICON_QUESTION).ShowModal() == wx.ID_YES:
-            if platform.system() == "Windows":
-                os.startfile(output_dir)
+                self.Close()
+            except Exception as e:
+                wx.MessageDialog(self, "An unexpected error occurred.", caption="Conversion failure", style=wx.OK | wx.ICON_ERROR | wx.CENTRE).ShowModal()
+                progress_dialog.Destroy()
+
+    def is_valid_csv(self, input_csv):
+        '''
+        Validates the format of the input CSV candidate_file by checking if the 
+        json row contains a key of "ImportId" with a value that starts with Q
+        and contains an underscore
+        '''
+        df = pd.read_csv(input_csv)
+
+        # check the row containing json values 
+        json_row = df.iloc[json_row_num].values
+        for cell in json_row:
+            try:
+                import_id_value = json.loads(cell)['ImportId']
+            except Exception as e:
+                pass
+            else:
+                if import_id_value.startswith("Q") and "_" in import_id_value and "_TEXT" not in import_id_value:
+                    return True
         
-        self.Close()
+        return False
 
     def ui_check_complete(self):
         self.button_create.Enable(not not (self.candidate_file))
