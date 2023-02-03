@@ -102,7 +102,7 @@ def make_json_config(input_csv, contest_name, candidates, output_folder):
     with open(output_folder + '\\' + contest_name + '.json', 'w', encoding='utf-8') as file:
         json.dump(output_dict, file, indent=4)
 
-def qualtrics_to_ess(input_csv, progress_dialog):
+def qualtrics_to_ess(input_csv, progress_dialog, output_dir):
     '''Converts the input_csv into ESS/CVR format Excel files. Returns the folder location of the Excel files'''
     df = pd.read_csv(input_csv)
     # ignore row if all null
@@ -146,7 +146,7 @@ def qualtrics_to_ess(input_csv, progress_dialog):
         election_name = q_col_names[0].split('_')[0]
         
         filename = input_csv.split('\\')[-1].replace('.csv', '')
-        output_folder = os.getcwd() + '\\' + 'converted' + '\\' + filename
+        output_folder = output_dir + '\\' + filename
         filepath = output_folder + '\\' + filename + '_' + election_name + '.xlsx'
         if not os.path.exists(output_folder):
             os.makedirs(output_folder)
@@ -177,14 +177,24 @@ class WindowNew(wx.Dialog):
         self.Bind(wx.EVT_BUTTON, self.ui_convert, self.button_create)
         self.button_create.Enable(False)
 
-        self.sizer_main = wx.FlexGridSizer(2, 1, 5, 0)
-        self.sizer_form = wx.FlexGridSizer(3, 3, 5, 5)
-        self.sizer_form.Add(self.label_candidate_file, 0, wx.ALIGN_CENTER_VERTICAL | wx.ALIGN_RIGHT | wx.LEFT, 5)
-        self.sizer_form.Add(self.text_ctrl_candidate_file, 0, wx.EXPAND, 0)
-        self.sizer_form.Add(self.button_candidate_file_browse, 0, wx.RIGHT, 5)
-        self.sizer_form.AddGrowableCol(1)
-        self.sizer_main.Add(self.sizer_form, 1, wx.EXPAND, 0)
+        self.sizer_main = wx.FlexGridSizer(3, 1, 5, 0)
+
+        self.row_0 = wx.FlexGridSizer(1, 3, 5, 5)
+        self.row_0.Add(self.label_candidate_file, 0, wx.ALIGN_CENTER_VERTICAL | wx.ALIGN_RIGHT | wx.LEFT, 5)
+        self.row_0.Add(self.text_ctrl_candidate_file, 0, wx.EXPAND, 0)
+        self.row_0.Add(self.button_candidate_file_browse, 0, wx.RIGHT, 5)
+        self.row_0.AddGrowableCol(1)
+        self.sizer_main.Add(self.row_0, 1, wx.EXPAND, 0)
+
+        self.row_1 = wx.FlexGridSizer(1, 3, 10, 10)
+        self.row_1.Add(wx.StaticText(self, wx.ID_ANY, "Output Directory"), 0, wx.ALIGN_CENTER_VERTICAL | wx.ALIGN_RIGHT | wx.LEFT, 5)
+        self.m_dirPicker1 = wx.DirPickerCtrl( self, wx.ID_ANY, os.getcwd(), u"Select a folder", wx.DefaultPosition, wx.Size( 300,-1 ), wx.DIRP_DEFAULT_STYLE )
+        self.m_dirPicker1.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_WINDOW ) )
+        self.row_1.Add(self.m_dirPicker1, 0, wx.RIGHT, 5)
+        self.sizer_main.Add(self.row_1)
+
         self.sizer_main.Add(self.button_create, 0, wx.ALIGN_RIGHT | wx.BOTTOM | wx.RIGHT, 5)
+
         self.SetSizer(self.sizer_main)
         self.sizer_main.Fit(self)
         self.sizer_main.AddGrowableRow(0)
@@ -207,7 +217,7 @@ class WindowNew(wx.Dialog):
     def ui_convert(self, event):
         progress_dialog = wx.ProgressDialog("Processing Ballots", "", maximum=self.max_progress_dialog_value, parent=self, style=wx.PD_APP_MODAL | wx.PD_AUTO_HIDE | wx.PD_ELAPSED_TIME | wx.PD_ESTIMATED_TIME | wx.PD_REMAINING_TIME)
         progress_dialog.Fit()
-        output_dir = qualtrics_to_ess(self.candidate_file, progress_dialog)
+        output_dir = qualtrics_to_ess(self.candidate_file, progress_dialog, self.m_dirPicker1.GetPath())
         progress_dialog.Update(self.max_progress_dialog_value)
         progress_dialog.Destroy()
         
