@@ -1,0 +1,49 @@
+{
+  "config" : {
+    "contest" : "TestRCV",
+    "date" : "",
+    "jurisdiction" : "",
+    "office" : "",
+    "threshold" : "22"
+  },
+  "results" : [ {
+    "round" : 1,
+    "tally" : {
+      "President_1 - Pizza - Meat Party" : "17",
+      "President_2 - Soup - Vegan Party" : "14",
+      "President_3 - Popcorn - Candy Party" : "14",
+      "President_4 - Write-In" : "1"
+    },
+    "tallyResults" : [ {
+      "eliminated" : "President_4 - Write-In",
+      "transfers" : {
+        "President_2 - Soup - Vegan Party" : "1"
+      }
+    } ]
+  }, {
+    "round" : 2,
+    "tally" : {
+      "President_1 - Pizza - Meat Party" : "17",
+      "President_2 - Soup - Vegan Party" : "15",
+      "President_3 - Popcorn - Candy Party" : "14"
+    },
+    "tallyResults" : [ {
+      "eliminated" : "President_3 - Popcorn - Candy Party",
+      "transfers" : {
+        "President_1 - Pizza - Meat Party" : "6",
+        "President_2 - Soup - Vegan Party" : "4",
+        "exhausted" : "4"
+      }
+    } ]
+  }, {
+    "round" : 3,
+    "tally" : {
+      "President_1 - Pizza - Meat Party" : "23",
+      "President_2 - Soup - Vegan Party" : "19"
+    },
+    "tallyResults" : [ {
+      "elected" : "President_1 - Pizza - Meat Party",
+      "transfers" : { }
+    } ]
+  } ]
+}

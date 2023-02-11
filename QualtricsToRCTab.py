@@ -1,4 +1,4 @@
-import wx
+import wx, wx.adv
 import os
 import pandas as pd
 import json
@@ -163,9 +163,11 @@ def qualtrics_to_ess(input_csv, progress_dialog, output_dir, rctab_dir):
         os.system("rcv -cli " + '"' + output_json_path + '"')
     return(output_dir)
 
-class WindowNew(wx.Dialog):
+class WindowNew(wx.Frame):
     def __init__(self, *args, **kwds):
-        wx.Dialog.__init__(self, *args, **kwds)
+        wx.Frame.__init__(self, *args, **kwds, style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL)
+        self.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_MENU ) )
+        self.SetMinSize(wx.Size(500, 200))
 
         self.label_candidate_file = None
         self.button_create = None
@@ -192,29 +194,48 @@ class WindowNew(wx.Dialog):
         self.row_0.AddGrowableCol(1)
         self.sizer_main.Add(self.row_0, 1, wx.EXPAND, 0)
 
-        self.row_1 = wx.FlexGridSizer(1, 3, 10, 10)
+        self.row_1 = wx.FlexGridSizer(1, 3, 5, 5)
         self.row_1.Add(wx.StaticText(self, wx.ID_ANY, "Output Directory"), 0, wx.ALIGN_CENTER_VERTICAL | wx.ALIGN_RIGHT | wx.LEFT, 5)
-        self.m_dirPickerOutputDir = wx.DirPickerCtrl( self, wx.ID_ANY, "", u"Select the output directory", wx.DefaultPosition, wx.Size( 400,-1 ), wx.DIRP_DEFAULT_STYLE )
+        self.text_ctrl_output_dir = wx.TextCtrl(self, wx.ID_ANY, "", size = wx.Size(-1, -1), style=wx.TE_READONLY)
+        self.row_1.Add(self.text_ctrl_output_dir, 0, wx.EXPAND, 0)
+        self.m_dirPickerOutputDir = wx.DirPickerCtrl( self, wx.ID_ANY, "", u"Select the output directory", wx.DefaultPosition, wx.Size( -1,-1 ), wx.TE_READONLY )
         self.m_dirPickerOutputDir.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_WINDOW ) )
+        self.Bind(wx.EVT_DIRPICKER_CHANGED, self.ui_browse_output_dir, self.m_dirPickerOutputDir)
         self.row_1.Add(self.m_dirPickerOutputDir, 0, wx.RIGHT, 5)
-        self.sizer_main.Add(self.row_1)
+        self.row_1.AddGrowableCol(1)
+        self.sizer_main.Add(self.row_1, 1, wx.EXPAND, 0)
 
-        self.row_2 = wx.FlexGridSizer(1, 3, 10, 10)
-        self.row_2.Add(wx.StaticText(self, wx.ID_ANY, "RCTab Directory "), 0, wx.ALIGN_CENTER_VERTICAL | wx.ALIGN_RIGHT | wx.LEFT, 5)
-        self.m_dirPickerRCTab = wx.DirPickerCtrl( self, wx.ID_ANY, os.getcwd() + '\\rctab_v1.3.0_windows', u"Select 'rctab_v1.3.0_windows' directory containing RCTab", wx.DefaultPosition, wx.Size( 400,-1 ), wx.DIRP_DEFAULT_STYLE )
+        rctab_dir = os.getcwd() + '\\rctab_v1.3.0_windows'
+        self.row_2 = wx.FlexGridSizer(1, 3, 5, 5)
+        self.row_2.Add(wx.StaticText(self, wx.ID_ANY, "RCTab Directory"), 0, wx.ALIGN_CENTER_VERTICAL | wx.ALIGN_RIGHT | wx.LEFT, 5)
+        self.text_ctrl_rctab_dir = wx.TextCtrl(self, wx.ID_ANY, rctab_dir, size = wx.Size(-1, -1), style=wx.TE_READONLY)
+        self.row_2.Add(self.text_ctrl_rctab_dir, 0, wx.EXPAND, 0)
+        self.m_dirPickerRCTab = wx.DirPickerCtrl( self, wx.ID_ANY, rctab_dir, u"Select 'rctab_v1.3.0_windows' directory containing RCTab", wx.DefaultPosition, wx.Size( -1,-1 ), wx.TE_READONLY )
         self.m_dirPickerRCTab.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_WINDOW ) )
-        self.row_2.Add(self.m_dirPickerRCTab, 0, wx.RIGHT, 0)
-        self.sizer_main.Add(self.row_2)
+        self.Bind(wx.EVT_DIRPICKER_CHANGED, self.ui_browse_rctab_dir, self.m_dirPickerRCTab)
+        self.row_2.Add(self.m_dirPickerRCTab, 0, wx.RIGHT, 5)
+        self.row_2.AddGrowableCol(1)
+        self.sizer_main.Add(self.row_2, 1, wx.EXPAND, 0)
 
         self.sizer_main.Add(self.button_create, 0, wx.ALIGN_RIGHT | wx.BOTTOM | wx.RIGHT, 5)
+
+        self.SetTitle("Qualtrics CSV to RCTab")
+
+        self.menu_help = wx.Menu()
+        self.menu_help_about = self.menu_help.Append(wx.ID_ABOUT, "&About")
+
+        self.menu_bar = wx.MenuBar()
+        self.menu_bar.Append(self.menu_help, "&Help")
+        self.SetMenuBar(self.menu_bar)
+        self.Bind(wx.EVT_MENU, self.ui_show_about, self.menu_help_about)
 
         self.SetSizer(self.sizer_main)
         self.sizer_main.Fit(self)
         self.sizer_main.AddGrowableRow(0)
+        self.sizer_main.AddGrowableRow(1)
+        self.sizer_main.AddGrowableRow(2)
         self.sizer_main.AddGrowableCol(0)
         self.Layout()
-
-        self.SetTitle("Qualtrics CSV to RCTab")
 
     def ui_browse_candidate_file(self, event):
         election_candidate_file = wx.FileDialog(self, "", os.getcwd(), "", "CSV file (*.csv)|*.csv|All files|*.*", wx.FD_OPEN | wx.FD_FILE_MUST_EXIST)
@@ -222,6 +243,15 @@ class WindowNew(wx.Dialog):
             return
         self.set_candidate_file(election_candidate_file.GetPath())
         self.ui_check_complete()
+
+    def ui_browse_output_dir(self, event):
+        self.text_ctrl_output_dir.SetValue(self.m_dirPickerOutputDir.GetPath())
+
+    def ui_browse_rctab_dir(self, event):
+        self.text_ctrl_rctab_dir.SetValue(self.m_dirPickerRCTab.GetPath())
+
+    def ui_show_about(self, event):
+        DialogAbout(self)
 
     def set_candidate_file(self, candidate_file):
         self.candidate_file = candidate_file
@@ -288,11 +318,21 @@ class WindowNew(wx.Dialog):
     def ui_check_complete(self):
         self.button_create.Enable(not not (self.candidate_file))
 
+class DialogAbout:
+    def __init__(self, parent):
+        about_info = wx.adv.AboutDialogInfo()
+        about_info.SetName("Qualtrics to RCTab")
+        about_info.SetVersion("1.0")
+        about_info.SetDescription("Converts Qualtrics CSV files to ES&S CVR Excel Files and imports these into RCTab to tabulated ranked choice voting elections.")
+        about_info.SetWebSite("https://github.com/anthonyym/qualtrics-to-rctab")
+        about_info.AddDeveloper("Anthony Chan <achan@udel.edu>")
+
+        wx.adv.AboutBox(about_info, parent)
+
 def main():
     app = wx.App()
     app_new_ui = WindowNew(None)
-    app_new_ui.ShowModal()
-    app_new_ui.Destroy()
+    app_new_ui.Show()
     app.MainLoop()
 
 if __name__ == "__main__":

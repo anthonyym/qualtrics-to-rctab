@@ -1,0 +1,164 @@
+2023-01-29 17:21:49 EST INFO: Tabulation logging to: C:\Users\Anthony Chan\Documents\Anthony\RCV\rctab_v1.3.0_windows\rcv\bin\output\2023-01-29_17-21-49_audit_0.log
+2023-01-29 17:21:49 EST INFO: Validating contest config...
+2023-01-29 17:21:49 EST INFO: Contest config validation successful.
+2023-01-29 17:21:49 EST INFO: Computer name: DESKTOP-OCGJ8O4
+2023-01-29 17:21:49 EST INFO: User name: Anthony Chan
+2023-01-29 17:21:49 EST INFO: Config file: C:\Users\Anthony Chan\Documents\Anthony\RCV\rctab_v1.3.0_windows\rcv\bin\TestRCV.json
+2023-01-29 17:21:49 EST FINE: Begin config file contents:
+2023-01-29 17:21:49 EST FINE: {
+2023-01-29 17:21:49 EST FINE:   "tabulatorVersion" : "1.3.0",
+2023-01-29 17:21:49 EST FINE:   "outputSettings" : {
+2023-01-29 17:21:49 EST FINE:     "contestName" : "TestRCV",
+2023-01-29 17:21:49 EST FINE:     "outputDirectory" : "output",
+2023-01-29 17:21:49 EST FINE:     "contestDate" : "",
+2023-01-29 17:21:49 EST FINE:     "contestJurisdiction" : "",
+2023-01-29 17:21:49 EST FINE:     "contestOffice" : "",
+2023-01-29 17:21:49 EST FINE:     "tabulateByPrecinct" : false,
+2023-01-29 17:21:49 EST FINE:     "generateCdfJson" : false
+2023-01-29 17:21:49 EST FINE:   },
+2023-01-29 17:21:49 EST FINE:   "cvrFileSources" : [ {
+2023-01-29 17:21:49 EST FINE:     "filePath" : "C:\\Users\\Anthony Chan\\Documents\\Anthony\\RCV\\QualtricsToESS\\qualtrics-to-ess\\output.xlsx",
+2023-01-29 17:21:49 EST FINE:     "contestId" : "",
+2023-01-29 17:21:49 EST FINE:     "firstVoteColumnIndex" : "4",
+2023-01-29 17:21:49 EST FINE:     "firstVoteRowIndex" : "2",
+2023-01-29 17:21:49 EST FINE:     "idColumnIndex" : "1",
+2023-01-29 17:21:49 EST FINE:     "precinctColumnIndex" : "2",
+2023-01-29 17:21:49 EST FINE:     "overvoteDelimiter" : "",
+2023-01-29 17:21:49 EST FINE:     "provider" : "ess",
+2023-01-29 17:21:49 EST FINE:     "overvoteLabel" : "overvote",
+2023-01-29 17:21:49 EST FINE:     "undervoteLabel" : "undervote",
+2023-01-29 17:21:49 EST FINE:     "undeclaredWriteInLabel" : "",
+2023-01-29 17:21:49 EST FINE:     "treatBlankAsUndeclaredWriteIn" : false
+2023-01-29 17:21:49 EST FINE:   } ],
+2023-01-29 17:21:49 EST FINE:   "candidates" : [ {
+2023-01-29 17:21:49 EST FINE:     "name" : "President_1 - Pizza - Meat Party",
+2023-01-29 17:21:49 EST FINE:     "code" : "",
+2023-01-29 17:21:49 EST FINE:     "excluded" : false
+2023-01-29 17:21:49 EST FINE:   }, {
+2023-01-29 17:21:49 EST FINE:     "name" : "President_2 - Soup - Vegan Party",
+2023-01-29 17:21:49 EST FINE:     "code" : "",
+2023-01-29 17:21:49 EST FINE:     "excluded" : false
+2023-01-29 17:21:49 EST FINE:   }, {
+2023-01-29 17:21:49 EST FINE:     "name" : "President_3 - Popcorn - Candy Party",
+2023-01-29 17:21:49 EST FINE:     "code" : "",
+2023-01-29 17:21:49 EST FINE:     "excluded" : false
+2023-01-29 17:21:49 EST FINE:   }, {
+2023-01-29 17:21:49 EST FINE:     "name" : "President_4 - Write-In",
+2023-01-29 17:21:49 EST FINE:     "code" : "",
+2023-01-29 17:21:49 EST FINE:     "excluded" : false
+2023-01-29 17:21:49 EST FINE:   } ],
+2023-01-29 17:21:49 EST FINE:   "rules" : {
+2023-01-29 17:21:49 EST FINE:     "tiebreakMode" : "stopCountingAndAsk",
+2023-01-29 17:21:49 EST FINE:     "overvoteRule" : "exhaustImmediately",
+2023-01-29 17:21:49 EST FINE:     "winnerElectionMode" : "singleWinnerMajority",
+2023-01-29 17:21:49 EST FINE:     "randomSeed" : "",
+2023-01-29 17:21:49 EST FINE:     "numberOfWinners" : "1",
+2023-01-29 17:21:49 EST FINE:     "multiSeatBottomsUpPercentageThreshold" : "",
+2023-01-29 17:21:49 EST FINE:     "decimalPlacesForVoteArithmetic" : "4",
+2023-01-29 17:21:49 EST FINE:     "minimumVoteThreshold" : "",
+2023-01-29 17:21:49 EST FINE:     "maxSkippedRanksAllowed" : "1",
+2023-01-29 17:21:49 EST FINE:     "maxRankingsAllowed" : "max",
+2023-01-29 17:21:49 EST FINE:     "nonIntegerWinningThreshold" : false,
+2023-01-29 17:21:49 EST FINE:     "hareQuota" : false,
+2023-01-29 17:21:49 EST FINE:     "batchElimination" : false,
+2023-01-29 17:21:49 EST FINE:     "continueUntilTwoCandidatesRemain" : false,
+2023-01-29 17:21:49 EST FINE:     "exhaustOnDuplicateCandidate" : false,
+2023-01-29 17:21:49 EST FINE:     "rulesDescription" : "",
+2023-01-29 17:21:49 EST FINE:     "treatBlankAsUndeclaredWriteIn" : false
+2023-01-29 17:21:49 EST FINE:   }
+2023-01-29 17:21:49 EST FINE: }
+2023-01-29 17:21:49 EST FINE: End config file contents.
+2023-01-29 17:21:49 EST INFO: Tabulating 'TestRCV'...
+2023-01-29 17:21:49 EST INFO: Parsing cast vote records...
+2023-01-29 17:21:49 EST INFO: Reading ES&S cast vote record file: C:\Users\Anthony Chan\Documents\Anthony\RCV\QualtricsToESS\qualtrics-to-ess\output.xlsx...
+2023-01-29 17:21:50 EST INFO: Parsed 46 cast vote records successfully.
+2023-01-29 17:21:50 EST INFO: There are 4 declared candidates for this contest:
+2023-01-29 17:21:50 EST INFO: President_3 - Popcorn - Candy Party
+2023-01-29 17:21:50 EST INFO: President_2 - Soup - Vegan Party
+2023-01-29 17:21:50 EST INFO: President_1 - Pizza - Meat Party
+2023-01-29 17:21:50 EST INFO: President_4 - Write-In
+2023-01-29 17:21:50 EST INFO: Round: 1
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 1 [counted for] President_1 - Pizza - Meat Party [Raw Data] [1, RCV Election, Qualtrics, President_1 - Pizza - Meat Party, President_3 - Popcorn - Candy Party, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 2 [counted for] President_3 - Popcorn - Candy Party [Raw Data] [2, RCV Election, Qualtrics, President_3 - Popcorn - Candy Party, President_1 - Pizza - Meat Party, President_2 - Soup - Vegan Party, President_4 - Write-In]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 3 [counted for] President_2 - Soup - Vegan Party [Raw Data] [3, RCV Election, Qualtrics, President_2 - Soup - Vegan Party, President_1 - Pizza - Meat Party, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 4 [counted for] President_2 - Soup - Vegan Party [Raw Data] [4, RCV Election, Qualtrics, President_2 - Soup - Vegan Party, President_4 - Write-In, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 5 [counted for] President_3 - Popcorn - Candy Party [Raw Data] [5, RCV Election, Qualtrics, President_3 - Popcorn - Candy Party, President_1 - Pizza - Meat Party, President_2 - Soup - Vegan Party, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 6 [counted for] President_2 - Soup - Vegan Party [Raw Data] [6, RCV Election, Qualtrics, President_2 - Soup - Vegan Party, President_3 - Popcorn - Candy Party, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 7 [counted for] President_3 - Popcorn - Candy Party [Raw Data] [7, RCV Election, Qualtrics, President_3 - Popcorn - Candy Party, empty cell, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 8 [counted for] President_1 - Pizza - Meat Party [Raw Data] [8, RCV Election, Qualtrics, President_1 - Pizza - Meat Party, President_3 - Popcorn - Candy Party, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 9 [counted for] President_3 - Popcorn - Candy Party [Raw Data] [9, RCV Election, Qualtrics, President_3 - Popcorn - Candy Party, empty cell, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 10 [counted for] President_2 - Soup - Vegan Party [Raw Data] [10, RCV Election, Qualtrics, President_2 - Soup - Vegan Party, empty cell, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 11 [counted for] President_3 - Popcorn - Candy Party [Raw Data] [11, RCV Election, Qualtrics, President_3 - Popcorn - Candy Party, empty cell, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 12 [counted for] President_1 - Pizza - Meat Party [Raw Data] [12, RCV Election, Qualtrics, President_1 - Pizza - Meat Party, President_2 - Soup - Vegan Party, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 13 [counted for] President_3 - Popcorn - Candy Party [Raw Data] [13, RCV Election, Qualtrics, President_3 - Popcorn - Candy Party, President_1 - Pizza - Meat Party, President_2 - Soup - Vegan Party, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 14 [counted for] President_1 - Pizza - Meat Party [Raw Data] [14, RCV Election, Qualtrics, President_1 - Pizza - Meat Party, President_3 - Popcorn - Candy Party, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 15 [counted for] President_1 - Pizza - Meat Party [Raw Data] [15, RCV Election, Qualtrics, President_1 - Pizza - Meat Party, President_3 - Popcorn - Candy Party, President_4 - Write-In, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 16 [counted for] President_2 - Soup - Vegan Party [Raw Data] [16, RCV Election, Qualtrics, President_2 - Soup - Vegan Party, President_3 - Popcorn - Candy Party, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 17 [counted for] President_3 - Popcorn - Candy Party [Raw Data] [17, RCV Election, Qualtrics, President_3 - Popcorn - Candy Party, President_2 - Soup - Vegan Party, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 18 [counted for] President_2 - Soup - Vegan Party [Raw Data] [18, RCV Election, Qualtrics, President_2 - Soup - Vegan Party, President_3 - Popcorn - Candy Party, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 19 [counted for] President_1 - Pizza - Meat Party [Raw Data] [19, RCV Election, Qualtrics, President_1 - Pizza - Meat Party, empty cell, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 20 [counted for] President_2 - Soup - Vegan Party [Raw Data] [20, RCV Election, Qualtrics, President_2 - Soup - Vegan Party, President_3 - Popcorn - Candy Party, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 21 [counted for] President_2 - Soup - Vegan Party [Raw Data] [21, RCV Election, Qualtrics, President_2 - Soup - Vegan Party, President_1 - Pizza - Meat Party, President_3 - Popcorn - Candy Party, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 22 [counted for] President_3 - Popcorn - Candy Party [Raw Data] [22, RCV Election, Qualtrics, President_3 - Popcorn - Candy Party, President_1 - Pizza - Meat Party, President_2 - Soup - Vegan Party, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 23 [counted for] President_3 - Popcorn - Candy Party [Raw Data] [23, RCV Election, Qualtrics, President_3 - Popcorn - Candy Party, President_2 - Soup - Vegan Party, President_1 - Pizza - Meat Party, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 24 [counted for] President_3 - Popcorn - Candy Party [Raw Data] [24, RCV Election, Qualtrics, President_3 - Popcorn - Candy Party, President_2 - Soup - Vegan Party, President_1 - Pizza - Meat Party, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 25 [counted for] President_2 - Soup - Vegan Party [Raw Data] [25, RCV Election, Qualtrics, President_2 - Soup - Vegan Party, President_1 - Pizza - Meat Party, President_3 - Popcorn - Candy Party, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 26 [counted for] President_1 - Pizza - Meat Party [Raw Data] [26, RCV Election, Qualtrics, President_1 - Pizza - Meat Party, President_2 - Soup - Vegan Party, President_3 - Popcorn - Candy Party, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 27 [counted for] President_2 - Soup - Vegan Party [Raw Data] [27, RCV Election, Qualtrics, President_2 - Soup - Vegan Party, President_1 - Pizza - Meat Party, President_3 - Popcorn - Candy Party, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 28 [counted for] President_3 - Popcorn - Candy Party [Raw Data] [28, RCV Election, Qualtrics, President_3 - Popcorn - Candy Party, President_2 - Soup - Vegan Party, President_1 - Pizza - Meat Party, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 29 [counted for] President_1 - Pizza - Meat Party [Raw Data] [29, RCV Election, Qualtrics, President_1 - Pizza - Meat Party, President_2 - Soup - Vegan Party, President_3 - Popcorn - Candy Party, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 30 [counted for] President_1 - Pizza - Meat Party [Raw Data] [30, RCV Election, Qualtrics, President_1 - Pizza - Meat Party, President_3 - Popcorn - Candy Party, President_2 - Soup - Vegan Party, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 31 [counted for] President_4 - Write-In [Raw Data] [31, RCV Election, Qualtrics, President_4 - Write-In, President_2 - Soup - Vegan Party, President_1 - Pizza - Meat Party, President_3 - Popcorn - Candy Party]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 32 [counted for] President_1 - Pizza - Meat Party [Raw Data] [32, RCV Election, Qualtrics, President_1 - Pizza - Meat Party, President_3 - Popcorn - Candy Party, President_2 - Soup - Vegan Party, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 33 [counted for] President_1 - Pizza - Meat Party [Raw Data] [33, RCV Election, Qualtrics, President_1 - Pizza - Meat Party, President_3 - Popcorn - Candy Party, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 34 [counted for] President_2 - Soup - Vegan Party [Raw Data] [34, RCV Election, Qualtrics, President_2 - Soup - Vegan Party, empty cell, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 35 [counted for] President_1 - Pizza - Meat Party [Raw Data] [35, RCV Election, Qualtrics, President_1 - Pizza - Meat Party, President_4 - Write-In, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 36 [counted for] President_1 - Pizza - Meat Party [Raw Data] [36, RCV Election, Qualtrics, President_1 - Pizza - Meat Party, President_3 - Popcorn - Candy Party, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 37 [counted for] President_1 - Pizza - Meat Party [Raw Data] [37, RCV Election, Qualtrics, President_1 - Pizza - Meat Party, empty cell, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 38 [counted for] President_3 - Popcorn - Candy Party [Raw Data] [38, RCV Election, Qualtrics, President_3 - Popcorn - Candy Party, President_1 - Pizza - Meat Party, President_2 - Soup - Vegan Party, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 39 [counted for] President_3 - Popcorn - Candy Party [Raw Data] [39, RCV Election, Qualtrics, President_3 - Popcorn - Candy Party, President_4 - Write-In, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 40 [counted for] President_2 - Soup - Vegan Party [Raw Data] [40, RCV Election, Qualtrics, President_2 - Soup - Vegan Party, President_1 - Pizza - Meat Party, President_3 - Popcorn - Candy Party, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 41 [counted for] President_2 - Soup - Vegan Party [Raw Data] [41, RCV Election, Qualtrics, President_2 - Soup - Vegan Party, President_3 - Popcorn - Candy Party, President_1 - Pizza - Meat Party, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 42 [counted for] President_2 - Soup - Vegan Party [Raw Data] [42, RCV Election, Qualtrics, President_2 - Soup - Vegan Party, President_3 - Popcorn - Candy Party, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 43 [counted for] President_3 - Popcorn - Candy Party [Raw Data] [43, RCV Election, Qualtrics, President_3 - Popcorn - Candy Party, President_1 - Pizza - Meat Party, empty cell, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 44 [counted for] President_1 - Pizza - Meat Party [Raw Data] [44, RCV Election, Qualtrics, President_1 - Pizza - Meat Party, President_3 - Popcorn - Candy Party, President_2 - Soup - Vegan Party, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 45 [counted for] President_1 - Pizza - Meat Party [Raw Data] [45, RCV Election, Qualtrics, President_1 - Pizza - Meat Party, President_3 - Popcorn - Candy Party, President_2 - Soup - Vegan Party, empty cell]
+2023-01-29 17:21:50 EST FINE: [Round] 1 [CVR] 46 [counted for] President_1 - Pizza - Meat Party [Raw Data] [46, RCV Election, Qualtrics, President_1 - Pizza - Meat Party, President_3 - Popcorn - Candy Party, empty cell, empty cell]
+2023-01-29 17:21:50 EST INFO: Winning threshold set to 24.
+2023-01-29 17:21:50 EST INFO: Candidate "President_3 - Popcorn - Candy Party" got 14 vote(s).
+2023-01-29 17:21:50 EST INFO: Candidate "President_2 - Soup - Vegan Party" got 14 vote(s).
+2023-01-29 17:21:50 EST INFO: Candidate "President_1 - Pizza - Meat Party" got 17 vote(s).
+2023-01-29 17:21:50 EST INFO: Candidate "President_4 - Write-In" got 1 vote(s).
+2023-01-29 17:21:50 EST INFO: Candidate "President_4 - Write-In" was eliminated in round 1 with 1 vote(s).
+2023-01-29 17:21:50 EST INFO: Round: 2
+2023-01-29 17:21:50 EST FINE: [Round] 2 [CVR] 31 [transferred to] President_2 - Soup - Vegan Party
+2023-01-29 17:21:50 EST INFO: Winning threshold set to 24.
+2023-01-29 17:21:50 EST INFO: Candidate "President_3 - Popcorn - Candy Party" got 14 vote(s).
+2023-01-29 17:21:50 EST INFO: Candidate "President_2 - Soup - Vegan Party" got 15 vote(s).
+2023-01-29 17:21:50 EST INFO: Candidate "President_1 - Pizza - Meat Party" got 17 vote(s).
+2023-01-29 17:21:50 EST INFO: Candidate "President_3 - Popcorn - Candy Party" was eliminated in round 2 with 14 vote(s).
+2023-01-29 17:21:50 EST INFO: Round: 3
+2023-01-29 17:21:50 EST FINE: [Round] 3 [CVR] 2 [transferred to] President_1 - Pizza - Meat Party
+2023-01-29 17:21:50 EST FINE: [Round] 3 [CVR] 5 [transferred to] President_1 - Pizza - Meat Party
+2023-01-29 17:21:50 EST FINE: [Round] 3 [CVR] 7 [became inactive] undervote
+2023-01-29 17:21:50 EST FINE: [Round] 3 [CVR] 9 [became inactive] undervote
+2023-01-29 17:21:50 EST FINE: [Round] 3 [CVR] 11 [became inactive] undervote
+2023-01-29 17:21:50 EST FINE: [Round] 3 [CVR] 13 [transferred to] President_1 - Pizza - Meat Party
+2023-01-29 17:21:50 EST FINE: [Round] 3 [CVR] 17 [transferred to] President_2 - Soup - Vegan Party
+2023-01-29 17:21:50 EST FINE: [Round] 3 [CVR] 22 [transferred to] President_1 - Pizza - Meat Party
+2023-01-29 17:21:50 EST FINE: [Round] 3 [CVR] 23 [transferred to] President_2 - Soup - Vegan Party
+2023-01-29 17:21:50 EST FINE: [Round] 3 [CVR] 24 [transferred to] President_2 - Soup - Vegan Party
+2023-01-29 17:21:50 EST FINE: [Round] 3 [CVR] 28 [transferred to] President_2 - Soup - Vegan Party
+2023-01-29 17:21:50 EST FINE: [Round] 3 [CVR] 38 [transferred to] President_1 - Pizza - Meat Party
+2023-01-29 17:21:50 EST FINE: [Round] 3 [CVR] 39 [became inactive] undervote
+2023-01-29 17:21:50 EST FINE: [Round] 3 [CVR] 43 [transferred to] President_1 - Pizza - Meat Party
+2023-01-29 17:21:50 EST INFO: Winning threshold set to 22.
+2023-01-29 17:21:50 EST INFO: Candidate "President_2 - Soup - Vegan Party" got 19 vote(s).
+2023-01-29 17:21:50 EST INFO: Candidate "President_1 - Pizza - Meat Party" got 23 vote(s).
+2023-01-29 17:21:50 EST INFO: Candidate "President_1 - Pizza - Meat Party" was elected in round 3 with 23 votes.
+2023-01-29 17:21:50 EST INFO: Generating summary spreadsheet: C:\Users\Anthony Chan\Documents\Anthony\RCV\rctab_v1.3.0_windows\rcv\bin\output\2023-01-29_17-21-49_summary.csv...
+2023-01-29 17:21:50 EST INFO: Summary spreadsheet generated successfully.
+2023-01-29 17:21:51 EST INFO: Generating summary JSON file: C:\Users\Anthony Chan\Documents\Anthony\RCV\rctab_v1.3.0_windows\rcv\bin\output\2023-01-29_17-21-49_summary.json...
+2023-01-29 17:21:51 EST INFO: JSON file generated successfully.
+2023-01-29 17:21:51 EST INFO: Tabulation session completed.
+2023-01-29 17:21:51 EST INFO: Results written to: C:\Users\Anthony Chan\Documents\Anthony\RCV\rctab_v1.3.0_windows\rcv\bin\output

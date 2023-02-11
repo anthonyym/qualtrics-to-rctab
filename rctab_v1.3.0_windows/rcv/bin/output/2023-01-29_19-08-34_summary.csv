@@ -1,0 +1,15 @@
+Contest,TestRCV
+Jurisdiction,
+Office,
+Date,
+Winner(s),President_1 - Pizza - Meat Party
+Threshold,10
+
+Rounds,Round 1,Round 2,Round 3
+Eliminated,President_2 - Soup - Vegan Party,President_4 - Write-In,
+Elected,,,President_1 - Pizza - Meat Party
+President_1 - Pizza - Meat Party,10,10,10
+President_3 - Popcorn - Candy Party,8,8,8
+President_4 - Write-In,5,5,0
+President_2 - Soup - Vegan Party,0,0,0
+Inactive ballots,0,0,5

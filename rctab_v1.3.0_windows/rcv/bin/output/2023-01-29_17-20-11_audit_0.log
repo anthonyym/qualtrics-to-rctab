@@ -1,0 +1,5 @@
+2023-01-29 17:20:12 EST INFO: Tabulation logging to: C:\Users\Anthony Chan\Documents\Anthony\RCV\rctab_v1.3.0_windows\rcv\bin\output\2023-01-29_17-20-11_audit_0.log
+2023-01-29 17:20:12 EST INFO: Validating contest config...
+2023-01-29 17:20:12 EST SEVERE: Contest config must contain at least 1 cast vote record file!
+2023-01-29 17:20:12 EST SEVERE: Contest config validation failed! Please modify the contest config file and try again.
+See config_file_documentation.txt for more details.

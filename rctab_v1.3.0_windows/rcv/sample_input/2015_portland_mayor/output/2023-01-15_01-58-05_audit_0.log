@@ -1,0 +1,503 @@
+2023-01-15 01:58:05 EST INFO: Tabulation logging to: C:\Users\Anthony Chan\Downloads\rctab_v1.3.0_windows\rcv\sample_input\2015_portland_mayor\output\2023-01-15_01-58-05_audit_0.log
+2023-01-15 01:58:05 EST INFO: Validating contest config...
+2023-01-15 01:58:05 EST INFO: Contest config validation successful.
+2023-01-15 01:58:05 EST INFO: Computer name: DESKTOP-OCGJ8O4
+2023-01-15 01:58:05 EST INFO: User name: Anthony Chan
+2023-01-15 01:58:05 EST INFO: Config file: C:\Users\Anthony Chan\Downloads\rctab_v1.3.0_windows\rcv\sample_input\2015_portland_mayor\2015_portland_mayor_config.json
+2023-01-15 01:58:05 EST FINE: Begin config file contents:
+2023-01-15 01:58:05 EST FINE: {
+2023-01-15 01:58:05 EST FINE:   "tabulatorVersion" : "1.3.0",
+2023-01-15 01:58:05 EST FINE:   "outputSettings" : {
+2023-01-15 01:58:05 EST FINE:     "contestName" : "Portland 2015 Mayoral Race",
+2023-01-15 01:58:05 EST FINE:     "outputDirectory" : "output",
+2023-01-15 01:58:05 EST FINE:     "contestDate" : "2015-11-03",
+2023-01-15 01:58:05 EST FINE:     "contestJurisdiction" : "Portland, ME",
+2023-01-15 01:58:05 EST FINE:     "contestOffice" : "Mayor",
+2023-01-15 01:58:05 EST FINE:     "tabulateByPrecinct" : false,
+2023-01-15 01:58:05 EST FINE:     "generateCdfJson" : false
+2023-01-15 01:58:05 EST FINE:   },
+2023-01-15 01:58:05 EST FINE:   "cvrFileSources" : [ {
+2023-01-15 01:58:05 EST FINE:     "filePath" : "2015_portland_mayor_cvr.xlsx",
+2023-01-15 01:58:05 EST FINE:     "contestId" : "",
+2023-01-15 01:58:05 EST FINE:     "firstVoteColumnIndex" : "4",
+2023-01-15 01:58:05 EST FINE:     "firstVoteRowIndex" : "2",
+2023-01-15 01:58:05 EST FINE:     "idColumnIndex" : "",
+2023-01-15 01:58:05 EST FINE:     "precinctColumnIndex" : "2",
+2023-01-15 01:58:05 EST FINE:     "overvoteDelimiter" : "",
+2023-01-15 01:58:05 EST FINE:     "provider" : "ess",
+2023-01-15 01:58:05 EST FINE:     "overvoteLabel" : "overvote",
+2023-01-15 01:58:05 EST FINE:     "undervoteLabel" : "undervote",
+2023-01-15 01:58:05 EST FINE:     "undeclaredWriteInLabel" : "UWI",
+2023-01-15 01:58:05 EST FINE:     "treatBlankAsUndeclaredWriteIn" : false
+2023-01-15 01:58:05 EST FINE:   } ],
+2023-01-15 01:58:05 EST FINE:   "candidates" : [ {
+2023-01-15 01:58:05 EST FINE:     "name" : "Brennan, Michael F.",
+2023-01-15 01:58:05 EST FINE:     "code" : "",
+2023-01-15 01:58:05 EST FINE:     "excluded" : false
+2023-01-15 01:58:05 EST FINE:   }, {
+2023-01-15 01:58:05 EST FINE:     "name" : "Bragdon, Charles E.",
+2023-01-15 01:58:05 EST FINE:     "code" : "",
+2023-01-15 01:58:05 EST FINE:     "excluded" : false
+2023-01-15 01:58:05 EST FINE:   }, {
+2023-01-15 01:58:05 EST FINE:     "name" : "Bryant, Peter G.",
+2023-01-15 01:58:05 EST FINE:     "code" : "",
+2023-01-15 01:58:05 EST FINE:     "excluded" : false
+2023-01-15 01:58:05 EST FINE:   }, {
+2023-01-15 01:58:05 EST FINE:     "name" : "Carmona, Ralph C.",
+2023-01-15 01:58:05 EST FINE:     "code" : "",
+2023-01-15 01:58:05 EST FINE:     "excluded" : false
+2023-01-15 01:58:05 EST FINE:   }, {
+2023-01-15 01:58:05 EST FINE:     "name" : "Dodge, Richard A.",
+2023-01-15 01:58:05 EST FINE:     "code" : "",
+2023-01-15 01:58:05 EST FINE:     "excluded" : false
+2023-01-15 01:58:05 EST FINE:   }, {
+2023-01-15 01:58:05 EST FINE:     "name" : "Duson, Jill C.",
+2023-01-15 01:58:05 EST FINE:     "code" : "",
+2023-01-15 01:58:05 EST FINE:     "excluded" : false
+2023-01-15 01:58:05 EST FINE:   }, {
+2023-01-15 01:58:05 EST FINE:     "name" : "Eder, John M.",
+2023-01-15 01:58:05 EST FINE:     "code" : "",
+2023-01-15 01:58:05 EST FINE:     "excluded" : false
+2023-01-15 01:58:05 EST FINE:   }, {
+2023-01-15 01:58:05 EST FINE:     "name" : "Haadoow, Hamza A.",
+2023-01-15 01:58:05 EST FINE:     "code" : "",
+2023-01-15 01:58:05 EST FINE:     "excluded" : false
+2023-01-15 01:58:05 EST FINE:   }, {
+2023-01-15 01:58:05 EST FINE:     "name" : "Lapchick, Jodie L.",
+2023-01-15 01:58:05 EST FINE:     "code" : "",
+2023-01-15 01:58:05 EST FINE:     "excluded" : false
+2023-01-15 01:58:05 EST FINE:   }, {
+2023-01-15 01:58:05 EST FINE:     "name" : "Marshall, David A.",
+2023-01-15 01:58:05 EST FINE:     "code" : "",
+2023-01-15 01:58:05 EST FINE:     "excluded" : false
+2023-01-15 01:58:05 EST FINE:   }, {
+2023-01-15 01:58:05 EST FINE:     "name" : "Mavodones, Nicholas M. Jr.",
+2023-01-15 01:58:05 EST FINE:     "code" : "",
+2023-01-15 01:58:05 EST FINE:     "excluded" : false
+2023-01-15 01:58:05 EST FINE:   }, {
+2023-01-15 01:58:05 EST FINE:     "name" : "Miller, Markos S.",
+2023-01-15 01:58:05 EST FINE:     "code" : "",
+2023-01-15 01:58:05 EST FINE:     "excluded" : false
+2023-01-15 01:58:05 EST FINE:   }, {
+2023-01-15 01:58:05 EST FINE:     "name" : "Rathband, Jed",
+2023-01-15 01:58:05 EST FINE:     "code" : "",
+2023-01-15 01:58:05 EST FINE:     "excluded" : false
+2023-01-15 01:58:05 EST FINE:   }, {
+2023-01-15 01:58:05 EST FINE:     "name" : "Strimling, Ethan K.",
+2023-01-15 01:58:05 EST FINE:     "code" : "",
+2023-01-15 01:58:05 EST FINE:     "excluded" : false
+2023-01-15 01:58:05 EST FINE:   }, {
+2023-01-15 01:58:05 EST FINE:     "name" : "Vail, Christopher L.",
+2023-01-15 01:58:05 EST FINE:     "code" : "",
+2023-01-15 01:58:05 EST FINE:     "excluded" : false
+2023-01-15 01:58:05 EST FINE:   } ],
+2023-01-15 01:58:05 EST FINE:   "rules" : {
+2023-01-15 01:58:05 EST FINE:     "tiebreakMode" : "useCandidateOrder",
+2023-01-15 01:58:05 EST FINE:     "overvoteRule" : "exhaustImmediately",
+2023-01-15 01:58:05 EST FINE:     "winnerElectionMode" : "singleWinnerMajority",
+2023-01-15 01:58:05 EST FINE:     "randomSeed" : "",
+2023-01-15 01:58:05 EST FINE:     "numberOfWinners" : "1",
+2023-01-15 01:58:05 EST FINE:     "multiSeatBottomsUpPercentageThreshold" : "",
+2023-01-15 01:58:05 EST FINE:     "decimalPlacesForVoteArithmetic" : "4",
+2023-01-15 01:58:05 EST FINE:     "minimumVoteThreshold" : "0",
+2023-01-15 01:58:05 EST FINE:     "maxSkippedRanksAllowed" : "1",
+2023-01-15 01:58:05 EST FINE:     "maxRankingsAllowed" : "15",
+2023-01-15 01:58:05 EST FINE:     "nonIntegerWinningThreshold" : false,
+2023-01-15 01:58:05 EST FINE:     "hareQuota" : false,
+2023-01-15 01:58:05 EST FINE:     "batchElimination" : true,
+2023-01-15 01:58:05 EST FINE:     "continueUntilTwoCandidatesRemain" : false,
+2023-01-15 01:58:05 EST FINE:     "exhaustOnDuplicateCandidate" : false,
+2023-01-15 01:58:05 EST FINE:     "rulesDescription" : "Maine Rules",
+2023-01-15 01:58:05 EST FINE:     "treatBlankAsUndeclaredWriteIn" : false
+2023-01-15 01:58:05 EST FINE:   }
+2023-01-15 01:58:05 EST FINE: }
+2023-01-15 01:58:05 EST FINE: End config file contents.
+2023-01-15 01:58:05 EST INFO: Tabulating 'Portland 2015 Mayoral Race'...
+2023-01-15 01:58:05 EST INFO: Parsing cast vote records...
+2023-01-15 01:58:05 EST INFO: Reading ES&S cast vote record file: C:\Users\Anthony Chan\Downloads\rctab_v1.3.0_windows\rcv\sample_input\2015_portland_mayor\2015_portland_mayor_cvr.xlsx...
+2023-01-15 01:58:06 EST INFO: Parsed 99 cast vote records successfully.
+2023-01-15 01:58:06 EST INFO: There are 15 declared candidates for this contest:
+2023-01-15 01:58:06 EST INFO: Duson, Jill C.
+2023-01-15 01:58:06 EST INFO: Marshall, David A.
+2023-01-15 01:58:06 EST INFO: Miller, Markos S.
+2023-01-15 01:58:06 EST INFO: Eder, John M.
+2023-01-15 01:58:06 EST INFO: Lapchick, Jodie L.
+2023-01-15 01:58:06 EST INFO: Brennan, Michael F.
+2023-01-15 01:58:06 EST INFO: Carmona, Ralph C.
+2023-01-15 01:58:06 EST INFO: Strimling, Ethan K.
+2023-01-15 01:58:06 EST INFO: Bragdon, Charles E.
+2023-01-15 01:58:06 EST INFO: Rathband, Jed
+2023-01-15 01:58:06 EST INFO: Dodge, Richard A.
+2023-01-15 01:58:06 EST INFO: Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST INFO: Haadoow, Hamza A.
+2023-01-15 01:58:06 EST INFO: Bryant, Peter G.
+2023-01-15 01:58:06 EST INFO: Vail, Christopher L.
+2023-01-15 01:58:06 EST INFO: Round: 1
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-1 [counted for] Haadoow, Hamza A. [Raw Data] [1, D Cliff and GDI, D Cliff and GDI, Haadoow, Hamza A. , Mavodones, Nicholas M. Jr. , Duson, Jill C. , Bryant, Peter G. , Strimling, Ethan K. , Miller, Markos S. , Lapchick, Jodie L. , Rathband, Jed , Eder, John M. , Bragdon, Charles E. , undervote, Vail, Christopher L. , undervote, undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-2 [counted for] Duson, Jill C. [Raw Data] [2, D Cliff and GDI, D Cliff and GDI, Duson, Jill C. , Mavodones, Nicholas M. Jr. , Dodge, Richard A. , Bryant, Peter G. , Strimling, Ethan K. , Miller, Markos S. , Haadoow, Hamza A. , Eder, John M. , Brennan, Michael F. , Bragdon, Charles E. , undervote, Vail, Christopher L. , Rathband, Jed , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-3 [counted for] Haadoow, Hamza A. [Raw Data] [3, D Cliff and GDI, D Cliff and GDI, Haadoow, Hamza A. , Mavodones, Nicholas M. Jr. , Duson, Jill C. , Bryant, Peter G. , Strimling, Ethan K. , Miller, Markos S. , Marshall, David A. , Rathband, Jed , Brennan, Michael F. , Bragdon, Charles E. , undervote, Vail, Christopher L. , undervote, undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-4 [counted for] Rathband, Jed [Raw Data] [4, D Cliff and GDI, D Cliff and GDI, Rathband, Jed , Strimling, Ethan K. , undervote, Mavodones, Nicholas M. Jr. , undervote, undervote, Duson, Jill C. , Haadoow, Hamza A. , Carmona, Ralph C. , Lapchick, Jodie L. , Bryant, Peter G. , undervote, undervote, undervote, Brennan, Michael F. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-5 [counted for] Brennan, Michael F. [Raw Data] [5, D Cliff and GDI, D Cliff and GDI, Brennan, Michael F. , Bragdon, Charles E. , Eder, John M. , Vail, Christopher L. , Mavodones, Nicholas M. Jr. , Marshall, David A. , Miller, Markos S. , Duson, Jill C. , Lapchick, Jodie L. , Carmona, Ralph C. , Rathband, Jed , Strimling, Ethan K. , Haadoow, Hamza A. , undervote, overvote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-6 [counted for] Bryant, Peter G. [Raw Data] [6, D Cliff and GDI, D Cliff and GDI, Bryant, Peter G. , Brennan, Michael F. , Bragdon, Charles E. , Vail, Christopher L. , Lapchick, Jodie L. , Marshall, David A. , Miller, Markos S. , Strimling, Ethan K. , Duson, Jill C. , Dodge, Richard A. , Carmona, Ralph C. , Haadoow, Hamza A. , Eder, John M. , Mavodones, Nicholas M. Jr. , Rathband, Jed ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-7 [counted for] Bryant, Peter G. [Raw Data] [7, D Cliff and GDI, D Cliff and GDI, Bryant, Peter G. , Bragdon, Charles E. , Eder, John M. , Vail, Christopher L. , Lapchick, Jodie L. , Marshall, David A. , Miller, Markos S. , Strimling, Ethan K. , Duson, Jill C. , Carmona, Ralph C. , Rathband, Jed , Haadoow, Hamza A. , undervote, Mavodones, Nicholas M. Jr. , Bryant, Peter G. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-8 [counted for] Bragdon, Charles E. [Raw Data] [8, D Cliff and GDI, D Cliff and GDI, Bragdon, Charles E. , Brennan, Michael F. , Bryant, Peter G. , empty cell, Carmona, Ralph C. , Dodge, Richard A. , Duson, Jill C. , Eder, John M. , Haadoow, Hamza A. , Lapchick, Jodie L. , Marshall, David A. , Mavodones, Nicholas M. Jr. , Miller, Markos S. , Rathband, Jed , Strimling, Ethan K. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-9 [counted for] Vail, Christopher L. [Raw Data] [9, D Cliff and GDI, D Cliff and GDI, Vail, Christopher L. , undervote, Strimling, Ethan K. , Mavodones, Nicholas M. Jr. , undervote, undervote, Duson, Jill C. , Haadoow, Hamza A. , Carmona, Ralph C. , Lapchick, Jodie L. , undervote, undervote, undervote, Bryant, Peter G. , Brennan, Michael F. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-10 [counted for] Mavodones, Nicholas M. Jr. [Raw Data] [10, D Cliff and GDI, D Cliff and GDI, Mavodones, Nicholas M. Jr. , Rathband, Jed , undervote, Haadoow, Hamza A. , undervote, Dodge, Richard A. , undervote, Carmona, Ralph C. , Bryant, Peter G. , Haadoow, Hamza A. , undervote, undervote, Brennan, Michael F. , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-11 [counted for] Bragdon, Charles E. [Raw Data] [11, D Cliff and GDI, D Cliff and GDI, Bragdon, Charles E. , Haadoow, Hamza A. , Eder, John M. , Vail, Christopher L. , Mavodones, Nicholas M. Jr. , Marshall, David A. , Miller, Markos S. , Duson, Jill C. , Lapchick, Jodie L. , Carmona, Ralph C. , Rathband, Jed , Strimling, Ethan K. , undervote, Dodge, Richard A. , Bryant, Peter G. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-12 [counted for] Bryant, Peter G. [Raw Data] [12, D Cliff and GDI, D Cliff and GDI, Bryant, Peter G. , Lapchick, Jodie L. , Bragdon, Charles E. , Strimling, Ethan K. , Marshall, David A. , Eder, John M. , Miller, Markos S. , Vail, Christopher L. , Duson, Jill C. , Dodge, Richard A. , Carmona, Ralph C. , Haadoow, Hamza A. , Mavodones, Nicholas M. Jr. , Rathband, Jed , undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-13 [counted for] Carmona, Ralph C. [Raw Data] [13, D Cliff and GDI, D Cliff and GDI, Carmona, Ralph C. , Bryant, Peter G. , Brennan, Michael F. , Rathband, Jed , Eder, John M. , Bragdon, Charles E. , Miller, Markos S. , Vail, Christopher L. , Duson, Jill C. , Dodge, Richard A. , Lapchick, Jodie L. , Marshall, David A. , Mavodones, Nicholas M. Jr. , Strimling, Ethan K. , Haadoow, Hamza A. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-14 [counted for] Duson, Jill C. [Raw Data] [14, D Cliff and GDI, D Cliff and GDI, Duson, Jill C. , Mavodones, Nicholas M. Jr. , Dodge, Richard A. , Bryant, Peter G. , Strimling, Ethan K. , Miller, Markos S. , Haadoow, Hamza A. , Eder, John M. , Brennan, Michael F. , Bragdon, Charles E. , undervote, Vail, Christopher L. , Rathband, Jed , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-15 [counted for] Mavodones, Nicholas M. Jr. [Raw Data] [15, D Cliff and GDI, D Cliff and GDI, Mavodones, Nicholas M. Jr. , Rathband, Jed , undervote, Lapchick, Jodie L. , undervote, Carmona, Ralph C. , undervote, Miller, Markos S. , Bryant, Peter G. , Haadoow, Hamza A. , Dodge, Richard A. , undervote, Brennan, Michael F. , undervote, Bragdon, Charles E. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-16 [counted for] Carmona, Ralph C. [Raw Data] [16, D Cliff and GDI, D Cliff and GDI, Carmona, Ralph C. , Bryant, Peter G. , Brennan, Michael F. , Bragdon, Charles E. , Marshall, David A. , Haadoow, Hamza A. , Miller, Markos S. , Vail, Christopher L. , Duson, Jill C. , Dodge, Richard A. , Lapchick, Jodie L. , Eder, John M. , Mavodones, Nicholas M. Jr. , Strimling, Ethan K. , Rathband, Jed ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-17 [counted for] Vail, Christopher L. [Raw Data] [17, D Cliff and GDI, D Cliff and GDI, Vail, Christopher L. , undervote, Strimling, Ethan K. , Mavodones, Nicholas M. Jr. , undervote, undervote, Duson, Jill C. , Haadoow, Hamza A. , Carmona, Ralph C. , Lapchick, Jodie L. , undervote, undervote, Bryant, Peter G. , undervote, Brennan, Michael F. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-18 [counted for] Vail, Christopher L. [Raw Data] [18, D Cliff and GDI, D Cliff and GDI, Vail, Christopher L. , undervote, Strimling, Ethan K. , Mavodones, Nicholas M. Jr. , undervote, undervote, Duson, Jill C. , Haadoow, Hamza A. , Carmona, Ralph C. , Lapchick, Jodie L. , undervote, Bryant, Peter G. , undervote, undervote, Brennan, Michael F. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-19 [counted for] Haadoow, Hamza A. [Raw Data] [19, D Cliff and GDI, D Cliff and GDI, Haadoow, Hamza A. , Mavodones, Nicholas M. Jr. , Duson, Jill C. , Bryant, Peter G. , Strimling, Ethan K. , Miller, Markos S. , Lapchick, Jodie L. , Rathband, Jed , Eder, John M. , Brennan, Michael F. , Bragdon, Charles E. , Vail, Christopher L. , undervote, undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-20 [counted for] Haadoow, Hamza A. [Raw Data] [20, D Cliff and GDI, D Cliff and GDI, Haadoow, Hamza A. , Miller, Markos S. , Duson, Jill C. , Carmona, Ralph C. , Bryant, Peter G. , Rathband, Jed , Lapchick, Jodie L. , undervote, Eder, John M. , Brennan, Michael F. , Bragdon, Charles E. , Vail, Christopher L. , undervote, undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-21 [counted for] Mavodones, Nicholas M. Jr. [Raw Data] [21, D Cliff and GDI, D Cliff and GDI, Mavodones, Nicholas M. Jr. , Rathband, Jed , undervote, Lapchick, Jodie L. , undervote, Dodge, Richard A. , Carmona, Ralph C. , Miller, Markos S. , Bryant, Peter G. , Haadoow, Hamza A. , undervote, undervote, Brennan, Michael F. , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-22 [counted for] Carmona, Ralph C. [Raw Data] [22, D Cliff and GDI, D Cliff and GDI, Carmona, Ralph C. , Bryant, Peter G. , Bragdon, Charles E. , Rathband, Jed , Marshall, David A. , Eder, John M. , Miller, Markos S. , Vail, Christopher L. , Duson, Jill C. , Dodge, Richard A. , Lapchick, Jodie L. , Haadoow, Hamza A. , Mavodones, Nicholas M. Jr. , Strimling, Ethan K. , undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-23 [counted for] Dodge, Richard A. [Raw Data] [23, D Cliff and GDI, D Cliff and GDI, Dodge, Richard A. , Lapchick, Jodie L. , Carmona, Ralph C. , Bryant, Peter G. , Vail, Christopher L. , Mavodones, Nicholas M. Jr. , Haadoow, Hamza A. , Eder, John M. , Bragdon, Charles E. , Strimling, Ethan K. , undervote, Duson, Jill C. , Marshall, David A. , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-24 [counted for] Mavodones, Nicholas M. Jr. [Raw Data] [24, D Cliff and GDI, D Cliff and GDI, Mavodones, Nicholas M. Jr. , Rathband, Jed , undervote, Lapchick, Jodie L. , undervote, Dodge, Richard A. , Carmona, Ralph C. , Miller, Markos S. , Bryant, Peter G. , Haadoow, Hamza A. , undervote, undervote, Brennan, Michael F. , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-25 [counted for] Carmona, Ralph C. [Raw Data] [25, D Cliff and GDI, D Cliff and GDI, Carmona, Ralph C. , Bryant, Peter G. , Bragdon, Charles E. , Rathband, Jed , Marshall, David A. , Eder, John M. , Miller, Markos S. , Vail, Christopher L. , Duson, Jill C. , Dodge, Richard A. , Lapchick, Jodie L. , Haadoow, Hamza A. , Mavodones, Nicholas M. Jr. , Strimling, Ethan K. , undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-26 [counted for] Bragdon, Charles E. [Raw Data] [26, D Cliff and GDI, D Cliff and GDI, Bragdon, Charles E. , overvote, Lapchick, Jodie L. , Marshall, David A. , Mavodones, Nicholas M. Jr. , Miller, Markos S. , Rathband, Jed , Strimling, Ethan K. , Vail, Christopher L. , overvote, undervote, undervote, undervote, undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-27 [counted for] Carmona, Ralph C. [Raw Data] [27, D Cliff and GDI, D Cliff and GDI, Carmona, Ralph C. , Bryant, Peter G. , Brennan, Michael F. , Rathband, Jed , Eder, John M. , Vail, Christopher L. , Bragdon, Charles E. , Lapchick, Jodie L. , Haadoow, Hamza A. , Dodge, Richard A. , Marshall, David A. , Mavodones, Nicholas M. Jr. , Strimling, Ethan K. , undervote, Miller, Markos S. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-28 [counted for] Dodge, Richard A. [Raw Data] [28, D Cliff and GDI, D Cliff and GDI, Dodge, Richard A. , Carmona, Ralph C. , Bryant, Peter G. , Rathband, Jed , Brennan, Michael F. , Vail, Christopher L. , Eder, John M. , Lapchick, Jodie L. , Bragdon, Charles E. , Duson, Jill C. , Mavodones, Nicholas M. Jr. , Miller, Markos S. , Marshall, David A. , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-29 [counted for] Brennan, Michael F. [Raw Data] [29, D Cliff and GDI, D Cliff and GDI, undervote, Brennan, Michael F. , Bryant, Peter G. , Carmona, Ralph C. , Dodge, Richard A. , Duson, Jill C. , Eder, John M. , Haadoow, Hamza A. , Lapchick, Jodie L. , Marshall, David A. , Mavodones, Nicholas M. Jr. , Miller, Markos S. , Rathband, Jed , Strimling, Ethan K. , Vail, Christopher L. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-30 [counted for] Carmona, Ralph C. [Raw Data] [30, D Cliff and GDI, D Cliff and GDI, Carmona, Ralph C. , Bryant, Peter G. , Lapchick, Jodie L. , Brennan, Michael F. , Eder, John M. , Vail, Christopher L. , Strimling, Ethan K. , Bragdon, Charles E. , Haadoow, Hamza A. , Dodge, Richard A. , Mavodones, Nicholas M. Jr. , Miller, Markos S. , Marshall, David A. , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-31 [counted for] Lapchick, Jodie L. [Raw Data] [31, D Cliff and GDI, D Cliff and GDI, Lapchick, Jodie L. , Miller, Markos S. , Mavodones, Nicholas M. Jr. , undervote, Carmona, Ralph C. , undervote, Bryant, Peter G. , Rathband, Jed , Eder, John M. , Marshall, David A. , Brennan, Michael F. , undervote, undervote, Bragdon, Charles E. , undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-32 [counted for] Bragdon, Charles E. [Raw Data] [32, D Cliff and GDI, D Cliff and GDI, Bragdon, Charles E. , Eder, John M. , Vail, Christopher L. , Marshall, David A. , Mavodones, Nicholas M. Jr. , Strimling, Ethan K. , Miller, Markos S. , Duson, Jill C. , Carmona, Ralph C. , Rathband, Jed , Haadoow, Hamza A. , Lapchick, Jodie L. , undervote, Dodge, Richard A. , Bryant, Peter G. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-33 [counted for] Bragdon, Charles E. [Raw Data] [33, D Cliff and GDI, D Cliff and GDI, Bragdon, Charles E. , Lapchick, Jodie L. , overvote, Eder, John M. , undervote, undervote, undervote, undervote, undervote, undervote, undervote, undervote, undervote, undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-34 [counted for] Duson, Jill C. [Raw Data] [34, D Cliff and GDI, D Cliff and GDI, Duson, Jill C. , Dodge, Richard A. , Carmona, Ralph C. , Bryant, Peter G. , Vail, Christopher L. , Mavodones, Nicholas M. Jr. , Haadoow, Hamza A. , Eder, John M. , Bragdon, Charles E. , Strimling, Ethan K. , undervote, undervote, Marshall, David A. , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-35 [counted for] Brennan, Michael F. [Raw Data] [35, D Cliff and GDI, D Cliff and GDI, Brennan, Michael F. , Bragdon, Charles E. , Eder, John M. , Vail, Christopher L. , Lapchick, Jodie L. , Marshall, David A. , Miller, Markos S. , Strimling, Ethan K. , Duson, Jill C. , Carmona, Ralph C. , Rathband, Jed , Haadoow, Hamza A. , undervote, Mavodones, Nicholas M. Jr. , Bryant, Peter G. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-36 [counted for] Carmona, Ralph C. [Raw Data] [36, D Cliff and GDI, D Cliff and GDI, Carmona, Ralph C. , Bryant, Peter G. , Brennan, Michael F. , Rathband, Jed , Bragdon, Charles E. , Haadoow, Hamza A. , Miller, Markos S. , Vail, Christopher L. , Duson, Jill C. , Dodge, Richard A. , Lapchick, Jodie L. , Eder, John M. , Mavodones, Nicholas M. Jr. , Strimling, Ethan K. , Marshall, David A. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-37 [counted for] Bryant, Peter G. [Raw Data] [37, D Cliff and GDI, D Cliff and GDI, Bryant, Peter G. , Brennan, Michael F. , Bragdon, Charles E. , Vail, Christopher L. , Lapchick, Jodie L. , Marshall, David A. , Miller, Markos S. , Strimling, Ethan K. , Duson, Jill C. , Carmona, Ralph C. , Rathband, Jed , Haadoow, Hamza A. , Eder, John M. , Mavodones, Nicholas M. Jr. , undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-38 [counted for] Miller, Markos S. [Raw Data] [38, D Cliff and GDI, D Cliff and GDI, Miller, Markos S. , Strimling, Ethan K. , Rathband, Jed , Mavodones, Nicholas M. Jr. , undervote, undervote, Duson, Jill C. , Haadoow, Hamza A. , Bryant, Peter G. , Vail, Christopher L. , undervote, undervote, undervote, undervote, Brennan, Michael F. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-39 [counted for] Dodge, Richard A. [Raw Data] [39, D Cliff and GDI, D Cliff and GDI, Dodge, Richard A. , Carmona, Ralph C. , Bryant, Peter G. , Rathband, Jed , Vail, Christopher L. , Mavodones, Nicholas M. Jr. , Haadoow, Hamza A. , Brennan, Michael F. , Bragdon, Charles E. , Strimling, Ethan K. , Duson, Jill C. , Miller, Markos S. , Marshall, David A. , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-40 [counted for] Bryant, Peter G. [Raw Data] [40, D Cliff and GDI, D Cliff and GDI, Bryant, Peter G. , Bragdon, Charles E. , Eder, John M. , Vail, Christopher L. , Lapchick, Jodie L. , Marshall, David A. , Miller, Markos S. , Strimling, Ethan K. , Duson, Jill C. , Carmona, Ralph C. , Rathband, Jed , Haadoow, Hamza A. , undervote, Mavodones, Nicholas M. Jr. , undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-41 [counted for] Carmona, Ralph C. [Raw Data] [41, D Cliff and GDI, D Cliff and GDI, Carmona, Ralph C. , Bryant, Peter G. , Lapchick, Jodie L. , Brennan, Michael F. , Eder, John M. , Vail, Christopher L. , Bragdon, Charles E. , Marshall, David A. , Haadoow, Hamza A. , Dodge, Richard A. , Mavodones, Nicholas M. Jr. , Miller, Markos S. , Strimling, Ethan K. , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-42 [counted for] Mavodones, Nicholas M. Jr. [Raw Data] [42, D Cliff and GDI, D Cliff and GDI, Mavodones, Nicholas M. Jr. , Strimling, Ethan K. , Rathband, Jed , Eder, John M. , undervote, undervote, Duson, Jill C. , Dodge, Richard A. , Bryant, Peter G. , Vail, Christopher L. , undervote, undervote, undervote, undervote, Brennan, Michael F. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-43 [counted for] Bragdon, Charles E. [Raw Data] [43, D Cliff and GDI, D Cliff and GDI, Bragdon, Charles E. , Haadoow, Hamza A. , Eder, John M. , Vail, Christopher L. , Mavodones, Nicholas M. Jr. , Marshall, David A. , Miller, Markos S. , Duson, Jill C. , Lapchick, Jodie L. , Carmona, Ralph C. , Rathband, Jed , Strimling, Ethan K. , undervote, Dodge, Richard A. , Bryant, Peter G. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-44 [counted for] Mavodones, Nicholas M. Jr. [Raw Data] [44, D Cliff and GDI, D Cliff and GDI, Mavodones, Nicholas M. Jr. , Rathband, Jed , undervote, Haadoow, Hamza A. , undervote, undervote, Dodge, Richard A. , Miller, Markos S. , Bryant, Peter G. , Eder, John M. , undervote, undervote, undervote, Brennan, Michael F. , undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-45 [counted for] Lapchick, Jodie L. [Raw Data] [45, D Cliff and GDI, D Cliff and GDI, Lapchick, Jodie L. , Haadoow, Hamza A. , Lapchick, Jodie L. , Lapchick, Jodie L. , Marshall, David A. , Mavodones, Nicholas M. Jr. , Miller, Markos S. , Rathband, Jed , Strimling, Ethan K. , Vail, Christopher L. , Bragdon, Charles E. , empty cell, Brennan, Michael F. , Bryant, Peter G. , Carmona, Ralph C. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-46 [counted for] Marshall, David A. [Raw Data] [46, D Cliff and GDI, D Cliff and GDI, Marshall, David A. , Miller, Markos S. , undervote, Mavodones, Nicholas M. Jr. , Duson, Jill C. , Carmona, Ralph C. , undervote, Bryant, Peter G. , Eder, John M. , Haadoow, Hamza A. , Dodge, Richard A. , Brennan, Michael F. , undervote, undervote, Bragdon, Charles E. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-47 [counted for] Brennan, Michael F. [Raw Data] [47, D Cliff and GDI, D Cliff and GDI, Brennan, Michael F. , Brennan, Michael F. , Brennan, Michael F. , Bryant, Peter G. , Carmona, Ralph C. , Dodge, Richard A. , Duson, Jill C. , Eder, John M. , Haadoow, Hamza A. , Lapchick, Jodie L. , Marshall, David A. , Mavodones, Nicholas M. Jr. , Miller, Markos S. , Rathband, Jed , Strimling, Ethan K. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-48 [counted for] Brennan, Michael F. [Raw Data] [48, D Cliff and GDI, D Cliff and GDI, Brennan, Michael F. , Bragdon, Charles E. , Eder, John M. , Vail, Christopher L. , Mavodones, Nicholas M. Jr. , Marshall, David A. , Miller, Markos S. , Strimling, Ethan K. , Duson, Jill C. , Carmona, Ralph C. , Rathband, Jed , Haadoow, Hamza A. , undervote, Lapchick, Jodie L. , overvote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-49 [counted for] Carmona, Ralph C. [Raw Data] [49, D Cliff and GDI, D Cliff and GDI, Carmona, Ralph C. , Bryant, Peter G. , Brennan, Michael F. , Bragdon, Charles E. , Marshall, David A. , Eder, John M. , Miller, Markos S. , Vail, Christopher L. , Duson, Jill C. , Dodge, Richard A. , Lapchick, Jodie L. , Haadoow, Hamza A. , Mavodones, Nicholas M. Jr. , Strimling, Ethan K. , Rathband, Jed ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-50 [counted for] Carmona, Ralph C. [Raw Data] [50, D Cliff and GDI, D Cliff and GDI, Carmona, Ralph C. , Bryant, Peter G. , Haadoow, Hamza A. , Bragdon, Charles E. , Marshall, David A. , Eder, John M. , Miller, Markos S. , Vail, Christopher L. , Duson, Jill C. , Dodge, Richard A. , Lapchick, Jodie L. , Haadoow, Hamza A. , Mavodones, Nicholas M. Jr. , Rathband, Jed , Strimling, Ethan K. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-51 [counted for] Lapchick, Jodie L. [Raw Data] [51, D Cliff and GDI, D Cliff and GDI, Lapchick, Jodie L. , Miller, Markos S. , Mavodones, Nicholas M. Jr. , Duson, Jill C. , Carmona, Ralph C. , Bryant, Peter G. , Vail, Christopher L. , Rathband, Jed , Eder, John M. , Marshall, David A. , Brennan, Michael F. , undervote, undervote, Bragdon, Charles E. , undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-52 [counted for] Mavodones, Nicholas M. Jr. [Raw Data] [52, D Cliff and GDI, D Cliff and GDI, Mavodones, Nicholas M. Jr. , Rathband, Jed , Miller, Markos S. , Lapchick, Jodie L. , undervote, Carmona, Ralph C. , undervote, undervote, Bryant, Peter G. , Haadoow, Hamza A. , Dodge, Richard A. , undervote, Brennan, Michael F. , undervote, Bragdon, Charles E. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-53 [counted for] Eder, John M. [Raw Data] [53, D Cliff and GDI, D Cliff and GDI, Eder, John M. , Duson, Jill C. , Marshall, David A. , Bryant, Peter G. , Strimling, Ethan K. , Miller, Markos S. , Haadoow, Hamza A. , Mavodones, Nicholas M. Jr. , Brennan, Michael F. , Bragdon, Charles E. , undervote, Vail, Christopher L. , Rathband, Jed , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-54 [counted for] Eder, John M. [Raw Data] [54, D Cliff and GDI, D Cliff and GDI, Eder, John M. , Duson, Jill C. , Dodge, Richard A. , Bryant, Peter G. , Strimling, Ethan K. , Miller, Markos S. , Haadoow, Hamza A. , undervote, Brennan, Michael F. , Bragdon, Charles E. , undervote, Vail, Christopher L. , Rathband, Jed , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-55 [counted for] Vail, Christopher L. [Raw Data] [55, D Cliff and GDI, D Cliff and GDI, Vail, Christopher L. , Strimling, Ethan K. , Rathband, Jed , undervote, undervote, Miller, Markos S. , Mavodones, Nicholas M. Jr. , Marshall, David A. , Lapchick, Jodie L. , Haadoow, Hamza A. , Eder, John M. , Duson, Jill C. , Dodge, Richard A. , Carmona, Ralph C. , Bryant, Peter G. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-56 [counted for] Mavodones, Nicholas M. Jr. [Raw Data] [56, D Cliff and GDI, D Cliff and GDI, Mavodones, Nicholas M. Jr. , Strimling, Ethan K. , Rathband, Jed , Haadoow, Hamza A. , undervote, undervote, Duson, Jill C. , Dodge, Richard A. , Bryant, Peter G. , Eder, John M. , undervote, undervote, undervote, undervote, Brennan, Michael F. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-57 [counted for] Dodge, Richard A. [Raw Data] [57, D Cliff and GDI, D Cliff and GDI, Dodge, Richard A. , Carmona, Ralph C. , Bryant, Peter G. , Miller, Markos S. , Vail, Christopher L. , Mavodones, Nicholas M. Jr. , Haadoow, Hamza A. , Eder, John M. , Bragdon, Charles E. , Strimling, Ethan K. , Duson, Jill C. , Rathband, Jed , Marshall, David A. , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-58 [counted for] Dodge, Richard A. [Raw Data] [58, D Cliff and GDI, D Cliff and GDI, Dodge, Richard A. , Carmona, Ralph C. , Bryant, Peter G. , Rathband, Jed , Vail, Christopher L. , Brennan, Michael F. , Eder, John M. , Lapchick, Jodie L. , Bragdon, Charles E. , Duson, Jill C. , Mavodones, Nicholas M. Jr. , Miller, Markos S. , Marshall, David A. , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-59 [counted for] Dodge, Richard A. [Raw Data] [59, D Cliff and GDI, D Cliff and GDI, Dodge, Richard A. , Lapchick, Jodie L. , Carmona, Ralph C. , Bryant, Peter G. , Vail, Christopher L. , Mavodones, Nicholas M. Jr. , Haadoow, Hamza A. , Eder, John M. , Bragdon, Charles E. , Strimling, Ethan K. , undervote, Duson, Jill C. , Marshall, David A. , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-60 [counted for] Miller, Markos S. [Raw Data] [60, D Cliff and GDI, D Cliff and GDI, Miller, Markos S. , Strimling, Ethan K. , undervote, Mavodones, Nicholas M. Jr. , undervote, undervote, Duson, Jill C. , Haadoow, Hamza A. , Carmona, Ralph C. , Bryant, Peter G. , undervote, undervote, undervote, undervote, Brennan, Michael F. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-61 [counted for] Strimling, Ethan K. [Raw Data] [61, D Cliff and GDI, D Cliff and GDI, Strimling, Ethan K. , Vail, Christopher L. , undervote, Mavodones, Nicholas M. Jr. , undervote, undervote, Duson, Jill C. , Haadoow, Hamza A. , Carmona, Ralph C. , Lapchick, Jodie L. , Bryant, Peter G. , undervote, undervote, undervote, Brennan, Michael F. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-62 [counted for] Marshall, David A. [Raw Data] [62, D Cliff and GDI, D Cliff and GDI, Marshall, David A. , Miller, Markos S. , undervote, Mavodones, Nicholas M. Jr. , Duson, Jill C. , Carmona, Ralph C. , undervote, Rathband, Jed , Bryant, Peter G. , Haadoow, Hamza A. , Dodge, Richard A. , Brennan, Michael F. , undervote, undervote, Bragdon, Charles E. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-63 [counted for] Dodge, Richard A. [Raw Data] [63, D Cliff and GDI, D Cliff and GDI, Dodge, Richard A. , Carmona, Ralph C. , Bryant, Peter G. , Rathband, Jed , Vail, Christopher L. , Brennan, Michael F. , Eder, John M. , Lapchick, Jodie L. , Bragdon, Charles E. , Duson, Jill C. , Mavodones, Nicholas M. Jr. , Miller, Markos S. , Marshall, David A. , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-64 [counted for] Vail, Christopher L. [Raw Data] [64, D Cliff and GDI, D Cliff and GDI, Vail, Christopher L. , empty cell, Strimling, Ethan K. , Rathband, Jed , Miller, Markos S. , Mavodones, Nicholas M. Jr. , Marshall, David A. , Lapchick, Jodie L. , Haadoow, Hamza A. , Eder, John M. , Duson, Jill C. , Dodge, Richard A. , Carmona, Ralph C. , Bryant, Peter G. , Brennan, Michael F. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-65 [counted for] Bragdon, Charles E. [Raw Data] [65, D Cliff and GDI, D Cliff and GDI, Bragdon, Charles E. , Haadoow, Hamza A. , Eder, John M. , Vail, Christopher L. , Mavodones, Nicholas M. Jr. , Marshall, David A. , Miller, Markos S. , Duson, Jill C. , Lapchick, Jodie L. , Carmona, Ralph C. , Rathband, Jed , Strimling, Ethan K. , undervote, Dodge, Richard A. , Bryant, Peter G. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-66 [counted for] Mavodones, Nicholas M. Jr. [Raw Data] [66, D Cliff and GDI, D Cliff and GDI, Mavodones, Nicholas M. Jr. , Miller, Markos S. , undervote, Lapchick, Jodie L. , Rathband, Jed , Carmona, Ralph C. , undervote, undervote, Bryant, Peter G. , Haadoow, Hamza A. , Dodge, Richard A. , Brennan, Michael F. , undervote, undervote, Bragdon, Charles E. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-67 [became inactive] overvote [Raw Data] [67, D Cliff and GDI, D Cliff and GDI, overvote, Bryant, Peter G. , Carmona, Ralph C. , Dodge, Richard A. , Duson, Jill C. , Eder, John M. , Haadoow, Hamza A. , Lapchick, Jodie L. , Marshall, David A. , Mavodones, Nicholas M. Jr. , Miller, Markos S. , Rathband, Jed , Strimling, Ethan K. , Vail, Christopher L. , empty cell]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-68 [counted for] Mavodones, Nicholas M. Jr. [Raw Data] [68, D Cliff and GDI, D Cliff and GDI, Mavodones, Nicholas M. Jr. , Miller, Markos S. , undervote, Lapchick, Jodie L. , Rathband, Jed , Carmona, Ralph C. , undervote, undervote, Bryant, Peter G. , Haadoow, Hamza A. , Dodge, Richard A. , Brennan, Michael F. , undervote, undervote, Bragdon, Charles E. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-69 [counted for] Bragdon, Charles E. [Raw Data] [69, D Cliff and GDI, D Cliff and GDI, Bragdon, Charles E. , Eder, John M. , Vail, Christopher L. , Marshall, David A. , Mavodones, Nicholas M. Jr. , Strimling, Ethan K. , Miller, Markos S. , Duson, Jill C. , Carmona, Ralph C. , Rathband, Jed , Haadoow, Hamza A. , Lapchick, Jodie L. , Vail, Christopher L. , Bryant, Peter G. , undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-70 [counted for] Bryant, Peter G. [Raw Data] [70, D Cliff and GDI, D Cliff and GDI, Bryant, Peter G. , Brennan, Michael F. , Bragdon, Charles E. , Vail, Christopher L. , Lapchick, Jodie L. , Marshall, David A. , Miller, Markos S. , Strimling, Ethan K. , Duson, Jill C. , Carmona, Ralph C. , Rathband, Jed , Haadoow, Hamza A. , Eder, John M. , Mavodones, Nicholas M. Jr. , undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-71 [counted for] Vail, Christopher L. [Raw Data] [71, D Cliff and GDI, D Cliff and GDI, Vail, Christopher L. , Strimling, Ethan K. , empty cell, Rathband, Jed , Miller, Markos S. , Mavodones, Nicholas M. Jr. , Marshall, David A. , Lapchick, Jodie L. , Haadoow, Hamza A. , Eder, John M. , Duson, Jill C. , Dodge, Richard A. , Carmona, Ralph C. , Bryant, Peter G. , Brennan, Michael F. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-72 [counted for] Lapchick, Jodie L. [Raw Data] [72, D Cliff and GDI, D Cliff and GDI, Lapchick, Jodie L. , Miller, Markos S. , Mavodones, Nicholas M. Jr. , undervote, Duson, Jill C. , Carmona, Ralph C. , Bryant, Peter G. , Rathband, Jed , Eder, John M. , Marshall, David A. , Brennan, Michael F. , undervote, undervote, Bragdon, Charles E. , undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-73 [counted for] Lapchick, Jodie L. [Raw Data] [73, D Cliff and GDI, D Cliff and GDI, Lapchick, Jodie L. , Miller, Markos S. , Mavodones, Nicholas M. Jr. , undervote, Dodge, Richard A. , Carmona, Ralph C. , Bryant, Peter G. , Rathband, Jed , Eder, John M. , Marshall, David A. , Brennan, Michael F. , undervote, undervote, Bragdon, Charles E. , undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-74 [counted for] Brennan, Michael F. [Raw Data] [74, D Cliff and GDI, D Cliff and GDI, Brennan, Michael F. , Carmona, Ralph C. , Duson, Jill C. , Haadoow, Hamza A. , undervote, undervote, undervote, undervote, undervote, undervote, undervote, undervote, undervote, undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-75 [counted for] Lapchick, Jodie L. [Raw Data] [75, D Cliff and GDI, D Cliff and GDI, Lapchick, Jodie L. , Miller, Markos S. , Mavodones, Nicholas M. Jr. , undervote, Carmona, Ralph C. , undervote, Bryant, Peter G. , Rathband, Jed , Eder, John M. , Marshall, David A. , Brennan, Michael F. , undervote, undervote, Bragdon, Charles E. , undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-76 [counted for] Dodge, Richard A. [Raw Data] [76, D Cliff and GDI, D Cliff and GDI, Dodge, Richard A. , Carmona, Ralph C. , Bryant, Peter G. , Rathband, Jed , Vail, Christopher L. , Brennan, Michael F. , Eder, John M. , Lapchick, Jodie L. , Bragdon, Charles E. , Duson, Jill C. , Mavodones, Nicholas M. Jr. , Miller, Markos S. , Marshall, David A. , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-77 [counted for] Bragdon, Charles E. [Raw Data] [77, D Cliff and GDI, D Cliff and GDI, Bragdon, Charles E. , Haadoow, Hamza A. , Eder, John M. , Vail, Christopher L. , Mavodones, Nicholas M. Jr. , Lapchick, Jodie L. , Miller, Markos S. , Duson, Jill C. , Dodge, Richard A. , Carmona, Ralph C. , Rathband, Jed , Strimling, Ethan K. , undervote, Marshall, David A. , Bryant, Peter G. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-78 [counted for] Haadoow, Hamza A. [Raw Data] [78, D Cliff and GDI, D Cliff and GDI, Haadoow, Hamza A. , Miller, Markos S. , Duson, Jill C. , Carmona, Ralph C. , Bryant, Peter G. , Rathband, Jed , Lapchick, Jodie L. , undervote, Eder, John M. , Brennan, Michael F. , Dodge, Richard A. , Bragdon, Charles E. , undervote, undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-79 [counted for] Miller, Markos S. [Raw Data] [79, D Cliff and GDI, D Cliff and GDI, Miller, Markos S. , Strimling, Ethan K. , undervote, Mavodones, Nicholas M. Jr. , undervote, undervote, Duson, Jill C. , Haadoow, Hamza A. , Carmona, Ralph C. , Bryant, Peter G. , undervote, undervote, undervote, undervote, Brennan, Michael F. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-80 [counted for] Rathband, Jed [Raw Data] [80, D Cliff and GDI, D Cliff and GDI, Rathband, Jed , Strimling, Ethan K. , undervote, Mavodones, Nicholas M. Jr. , undervote, undervote, Duson, Jill C. , Haadoow, Hamza A. , Carmona, Ralph C. , Lapchick, Jodie L. , Bryant, Peter G. , undervote, undervote, undervote, Brennan, Michael F. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-81 [counted for] Bryant, Peter G. [Raw Data] [81, D Cliff and GDI, D Cliff and GDI, Bryant, Peter G. , Brennan, Michael F. , Bragdon, Charles E. , Vail, Christopher L. , Lapchick, Jodie L. , Marshall, David A. , Miller, Markos S. , Strimling, Ethan K. , Duson, Jill C. , Carmona, Ralph C. , Rathband, Jed , Haadoow, Hamza A. , Eder, John M. , Mavodones, Nicholas M. Jr. , undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-82 [counted for] Mavodones, Nicholas M. Jr. [Raw Data] [82, D Cliff and GDI, D Cliff and GDI, Mavodones, Nicholas M. Jr. , Strimling, Ethan K. , Rathband, Jed , Eder, John M. , undervote, undervote, Duson, Jill C. , Dodge, Richard A. , Bryant, Peter G. , Vail, Christopher L. , undervote, undervote, undervote, undervote, Brennan, Michael F. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-83 [counted for] Dodge, Richard A. [Raw Data] [83, D Cliff and GDI, D Cliff and GDI, Dodge, Richard A. , Carmona, Ralph C. , Bryant, Peter G. , Miller, Markos S. , Vail, Christopher L. , Mavodones, Nicholas M. Jr. , Haadoow, Hamza A. , Brennan, Michael F. , Bragdon, Charles E. , Strimling, Ethan K. , Duson, Jill C. , Rathband, Jed , Marshall, David A. , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-84 [counted for] Carmona, Ralph C. [Raw Data] [84, D Cliff and GDI, D Cliff and GDI, Carmona, Ralph C. , Bryant, Peter G. , Brennan, Michael F. , Bragdon, Charles E. , Marshall, David A. , Eder, John M. , Miller, Markos S. , Vail, Christopher L. , Duson, Jill C. , Dodge, Richard A. , Lapchick, Jodie L. , Haadoow, Hamza A. , Mavodones, Nicholas M. Jr. , Strimling, Ethan K. , Rathband, Jed ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-85 [counted for] Mavodones, Nicholas M. Jr. [Raw Data] [85, D Cliff and GDI, D Cliff and GDI, Mavodones, Nicholas M. Jr. , Rathband, Jed , undervote, Haadoow, Hamza A. , undervote, Duson, Jill C. , Dodge, Richard A. , Miller, Markos S. , Bryant, Peter G. , Eder, John M. , undervote, undervote, undervote, Brennan, Michael F. , undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-86 [counted for] Carmona, Ralph C. [Raw Data] [86, D Cliff and GDI, D Cliff and GDI, Carmona, Ralph C. , Bryant, Peter G. , Brennan, Michael F. , Rathband, Jed , Bragdon, Charles E. , Haadoow, Hamza A. , Miller, Markos S. , Vail, Christopher L. , Duson, Jill C. , Dodge, Richard A. , Lapchick, Jodie L. , Eder, John M. , Mavodones, Nicholas M. Jr. , Strimling, Ethan K. , Marshall, David A. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-87 [counted for] Bryant, Peter G. [Raw Data] [87, D Cliff and GDI, D Cliff and GDI, Bryant, Peter G. , Brennan, Michael F. , Bragdon, Charles E. , Vail, Christopher L. , Lapchick, Jodie L. , Marshall, David A. , Miller, Markos S. , Strimling, Ethan K. , Duson, Jill C. , Carmona, Ralph C. , Rathband, Jed , Haadoow, Hamza A. , Eder, John M. , Mavodones, Nicholas M. Jr. , undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-88 [counted for] Lapchick, Jodie L. [Raw Data] [88, D Cliff and GDI, D Cliff and GDI, Lapchick, Jodie L. , Miller, Markos S. , Mavodones, Nicholas M. Jr. , undervote, Duson, Jill C. , Carmona, Ralph C. , Bryant, Peter G. , Rathband, Jed , Eder, John M. , Marshall, David A. , Brennan, Michael F. , undervote, undervote, undervote, Bragdon, Charles E. ]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-89 [counted for] Bragdon, Charles E. [Raw Data] [89, D Cliff and GDI, D Cliff and GDI, Bragdon, Charles E. , Eder, John M. , Vail, Christopher L. , Marshall, David A. , Mavodones, Nicholas M. Jr. , Strimling, Ethan K. , Miller, Markos S. , Duson, Jill C. , Carmona, Ralph C. , Rathband, Jed , Haadoow, Hamza A. , Lapchick, Jodie L. , Dodge, Richard A. , Bryant, Peter G. , undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-90 [counted for] Duson, Jill C. [Raw Data] [90, D Cliff and GDI, D Cliff and GDI, Duson, Jill C. , Marshall, David A. , Dodge, Richard A. , Bryant, Peter G. , Strimling, Ethan K. , Mavodones, Nicholas M. Jr. , Haadoow, Hamza A. , Eder, John M. , Bragdon, Charles E. , Miller, Markos S. , undervote, Vail, Christopher L. , Rathband, Jed , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-91 [counted for] Haadoow, Hamza A. [Raw Data] [91, D Cliff and GDI, D Cliff and GDI, Haadoow, Hamza A. , Miller, Markos S. , Mavodones, Nicholas M. Jr. , Duson, Jill C. , Carmona, Ralph C. , Bryant, Peter G. , Lapchick, Jodie L. , Rathband, Jed , Eder, John M. , Marshall, David A. , Brennan, Michael F. , Vail, Christopher L. , Bragdon, Charles E. , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-92 [counted for] Eder, John M. [Raw Data] [92, D Cliff and GDI, D Cliff and GDI, Eder, John M. , Duson, Jill C. , Dodge, Richard A. , Bryant, Peter G. , Strimling, Ethan K. , Miller, Markos S. , Haadoow, Hamza A. , Mavodones, Nicholas M. Jr. , Brennan, Michael F. , Bragdon, Charles E. , undervote, Vail, Christopher L. , Rathband, Jed , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-93 [counted for] Bryant, Peter G. [Raw Data] [93, D Cliff and GDI, D Cliff and GDI, Bryant, Peter G. , Brennan, Michael F. , Bragdon, Charles E. , Vail, Christopher L. , Lapchick, Jodie L. , Marshall, David A. , Miller, Markos S. , Strimling, Ethan K. , Duson, Jill C. , Carmona, Ralph C. , Rathband, Jed , Haadoow, Hamza A. , Eder, John M. , Mavodones, Nicholas M. Jr. , undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-94 [counted for] Dodge, Richard A. [Raw Data] [94, D Cliff and GDI, D Cliff and GDI, Dodge, Richard A. , Carmona, Ralph C. , Bryant, Peter G. , Rathband, Jed , Vail, Christopher L. , Strimling, Ethan K. , Brennan, Michael F. , Lapchick, Jodie L. , Bragdon, Charles E. , Duson, Jill C. , Mavodones, Nicholas M. Jr. , Miller, Markos S. , Marshall, David A. , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-95 [counted for] Mavodones, Nicholas M. Jr. [Raw Data] [95, D Cliff and GDI, D Cliff and GDI, Mavodones, Nicholas M. Jr. , Rathband, Jed , undervote, Haadoow, Hamza A. , undervote, undervote, Duson, Jill C. , Dodge, Richard A. , Bryant, Peter G. , Eder, John M. , undervote, undervote, undervote, Brennan, Michael F. , undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-96 [counted for] Duson, Jill C. [Raw Data] [96, D Cliff and GDI, D Cliff and GDI, Duson, Jill C. , Dodge, Richard A. , Marshall, David A. , Bryant, Peter G. , Strimling, Ethan K. , Mavodones, Nicholas M. Jr. , Haadoow, Hamza A. , Eder, John M. , Bragdon, Charles E. , Miller, Markos S. , undervote, Vail, Christopher L. , Rathband, Jed , undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-97 [counted for] Haadoow, Hamza A. [Raw Data] [97, D Cliff and GDI, D Cliff and GDI, Haadoow, Hamza A. , Mavodones, Nicholas M. Jr. , Duson, Jill C. , Bryant, Peter G. , Strimling, Ethan K. , Miller, Markos S. , Lapchick, Jodie L. , Rathband, Jed , Eder, John M. , Bragdon, Charles E. , undervote, Vail, Christopher L. , undervote, undervote, undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-98 [counted for] Bragdon, Charles E. [Raw Data] [98, D Cliff and GDI, D Cliff and GDI, Bragdon, Charles E. , Eder, John M. , Vail, Christopher L. , Marshall, David A. , Haadoow, Hamza A. , Strimling, Ethan K. , Rathband, Jed , Duson, Jill C. , Carmona, Ralph C. , Mavodones, Nicholas M. Jr. , Miller, Markos S. , Dodge, Richard A. , Lapchick, Jodie L. , Bryant, Peter G. , undervote]
+2023-01-15 01:58:06 EST FINE: [Round] 1 [CVR] 2015_portland_mayor_cvr.xlsx-99 [counted for] Haadoow, Hamza A. [Raw Data] [99, D Cliff and GDI, D Cliff and GDI, Haadoow, Hamza A. , Miller, Markos S. , Mavodones, Nicholas M. Jr. , Dodge, Richard A. , Bryant, Peter G. , Rathband, Jed , Lapchick, Jodie L. , undervote, Eder, John M. , Marshall, David A. , Brennan, Michael F. , Vail, Christopher L. , Bragdon, Charles E. , undervote, undervote]
+2023-01-15 01:58:06 EST INFO: Winning threshold set to 50.
+2023-01-15 01:58:06 EST INFO: Candidate "Duson, Jill C." got 5 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Marshall, David A." got 2 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Miller, Markos S." got 3 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Undeclared Write-ins" got 0 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Eder, John M." got 3 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Lapchick, Jodie L." got 7 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Brennan, Michael F." got 6 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Carmona, Ralph C." got 12 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Strimling, Ethan K." got 1 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bragdon, Charles E." got 11 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Rathband, Jed" got 2 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Dodge, Richard A." got 10 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Mavodones, Nicholas M. Jr." got 13 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Haadoow, Hamza A." got 8 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bryant, Peter G." got 9 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Vail, Christopher L." got 6 vote(s).
+2023-01-15 01:58:06 EST INFO: Batch-eliminated candidate "Undeclared Write-ins" in round 1. The running total was 0.0000 vote(s) and the next-lowest count was 1 vote(s).
+2023-01-15 01:58:06 EST INFO: Batch-eliminated candidate "Strimling, Ethan K." in round 1. The running total was 1.0000 vote(s) and the next-lowest count was 2 vote(s).
+2023-01-15 01:58:06 EST INFO: Round: 2
+2023-01-15 01:58:06 EST FINE: [Round] 2 [CVR] 2015_portland_mayor_cvr.xlsx-61 [transferred to] Vail, Christopher L.
+2023-01-15 01:58:06 EST INFO: Winning threshold set to 50.
+2023-01-15 01:58:06 EST INFO: Candidate "Duson, Jill C." got 5 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Marshall, David A." got 2 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Miller, Markos S." got 3 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Eder, John M." got 3 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Lapchick, Jodie L." got 7 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Brennan, Michael F." got 6 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Carmona, Ralph C." got 12 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bragdon, Charles E." got 11 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Rathband, Jed" got 2 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Dodge, Richard A." got 10 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Mavodones, Nicholas M. Jr." got 13 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Haadoow, Hamza A." got 8 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bryant, Peter G." got 9 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Vail, Christopher L." got 7 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Rathband, Jed" lost a tie-breaker in round 2 against "Marshall, David A.". Each candidate had 2 vote(s). The selected candidate appeared latest in the tie-breaking permutation list.
+2023-01-15 01:58:06 EST INFO: Round: 3
+2023-01-15 01:58:06 EST FINE: [Round] 3 [CVR] 2015_portland_mayor_cvr.xlsx-4 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 3 [CVR] 2015_portland_mayor_cvr.xlsx-80 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST INFO: Winning threshold set to 50.
+2023-01-15 01:58:06 EST INFO: Candidate "Duson, Jill C." got 5 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Marshall, David A." got 2 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Miller, Markos S." got 3 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Eder, John M." got 3 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Lapchick, Jodie L." got 7 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Brennan, Michael F." got 6 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Carmona, Ralph C." got 12 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bragdon, Charles E." got 11 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Dodge, Richard A." got 10 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Mavodones, Nicholas M. Jr." got 15 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Haadoow, Hamza A." got 8 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bryant, Peter G." got 9 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Vail, Christopher L." got 7 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Marshall, David A." was eliminated in round 3 with 2 vote(s).
+2023-01-15 01:58:06 EST INFO: Round: 4
+2023-01-15 01:58:06 EST FINE: [Round] 4 [CVR] 2015_portland_mayor_cvr.xlsx-46 [transferred to] Miller, Markos S.
+2023-01-15 01:58:06 EST FINE: [Round] 4 [CVR] 2015_portland_mayor_cvr.xlsx-62 [transferred to] Miller, Markos S.
+2023-01-15 01:58:06 EST INFO: Winning threshold set to 50.
+2023-01-15 01:58:06 EST INFO: Candidate "Duson, Jill C." got 5 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Miller, Markos S." got 5 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Mavodones, Nicholas M. Jr." got 15 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Eder, John M." got 3 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Lapchick, Jodie L." got 7 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Haadoow, Hamza A." got 8 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Brennan, Michael F." got 6 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Carmona, Ralph C." got 12 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bryant, Peter G." got 9 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bragdon, Charles E." got 11 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Vail, Christopher L." got 7 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Dodge, Richard A." got 10 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Eder, John M." was eliminated in round 4 with 3 vote(s).
+2023-01-15 01:58:06 EST INFO: Round: 5
+2023-01-15 01:58:06 EST FINE: [Round] 5 [CVR] 2015_portland_mayor_cvr.xlsx-53 [transferred to] Duson, Jill C.
+2023-01-15 01:58:06 EST FINE: [Round] 5 [CVR] 2015_portland_mayor_cvr.xlsx-54 [transferred to] Duson, Jill C.
+2023-01-15 01:58:06 EST FINE: [Round] 5 [CVR] 2015_portland_mayor_cvr.xlsx-92 [transferred to] Duson, Jill C.
+2023-01-15 01:58:06 EST INFO: Winning threshold set to 50.
+2023-01-15 01:58:06 EST INFO: Candidate "Duson, Jill C." got 8 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Miller, Markos S." got 5 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Mavodones, Nicholas M. Jr." got 15 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Lapchick, Jodie L." got 7 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Haadoow, Hamza A." got 8 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Brennan, Michael F." got 6 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Carmona, Ralph C." got 12 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bryant, Peter G." got 9 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bragdon, Charles E." got 11 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Vail, Christopher L." got 7 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Dodge, Richard A." got 10 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Miller, Markos S." was eliminated in round 5 with 5 vote(s).
+2023-01-15 01:58:06 EST INFO: Round: 6
+2023-01-15 01:58:06 EST FINE: [Round] 6 [CVR] 2015_portland_mayor_cvr.xlsx-38 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 6 [CVR] 2015_portland_mayor_cvr.xlsx-46 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 6 [CVR] 2015_portland_mayor_cvr.xlsx-60 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 6 [CVR] 2015_portland_mayor_cvr.xlsx-62 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 6 [CVR] 2015_portland_mayor_cvr.xlsx-79 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST INFO: Winning threshold set to 50.
+2023-01-15 01:58:06 EST INFO: Candidate "Duson, Jill C." got 8 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Mavodones, Nicholas M. Jr." got 20 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Lapchick, Jodie L." got 7 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Haadoow, Hamza A." got 8 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Brennan, Michael F." got 6 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Carmona, Ralph C." got 12 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bryant, Peter G." got 9 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bragdon, Charles E." got 11 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Vail, Christopher L." got 7 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Dodge, Richard A." got 10 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Brennan, Michael F." was eliminated in round 6 with 6 vote(s).
+2023-01-15 01:58:06 EST INFO: Round: 7
+2023-01-15 01:58:06 EST FINE: [Round] 7 [CVR] 2015_portland_mayor_cvr.xlsx-5 [transferred to] Bragdon, Charles E.
+2023-01-15 01:58:06 EST FINE: [Round] 7 [CVR] 2015_portland_mayor_cvr.xlsx-29 [transferred to] Bryant, Peter G.
+2023-01-15 01:58:06 EST FINE: [Round] 7 [CVR] 2015_portland_mayor_cvr.xlsx-35 [transferred to] Bragdon, Charles E.
+2023-01-15 01:58:06 EST FINE: [Round] 7 [CVR] 2015_portland_mayor_cvr.xlsx-47 [transferred to] Bryant, Peter G.
+2023-01-15 01:58:06 EST FINE: [Round] 7 [CVR] 2015_portland_mayor_cvr.xlsx-48 [transferred to] Bragdon, Charles E.
+2023-01-15 01:58:06 EST FINE: [Round] 7 [CVR] 2015_portland_mayor_cvr.xlsx-74 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST INFO: Winning threshold set to 50.
+2023-01-15 01:58:06 EST INFO: Candidate "Duson, Jill C." got 8 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Mavodones, Nicholas M. Jr." got 20 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Lapchick, Jodie L." got 7 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Haadoow, Hamza A." got 8 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Carmona, Ralph C." got 13 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bryant, Peter G." got 11 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bragdon, Charles E." got 14 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Vail, Christopher L." got 7 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Dodge, Richard A." got 10 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Vail, Christopher L." lost a tie-breaker in round 7 against "Lapchick, Jodie L.". Each candidate had 7 vote(s). The selected candidate appeared latest in the tie-breaking permutation list.
+2023-01-15 01:58:06 EST INFO: Round: 8
+2023-01-15 01:58:06 EST FINE: [Round] 8 [CVR] 2015_portland_mayor_cvr.xlsx-9 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 8 [CVR] 2015_portland_mayor_cvr.xlsx-17 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 8 [CVR] 2015_portland_mayor_cvr.xlsx-18 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 8 [CVR] 2015_portland_mayor_cvr.xlsx-55 [became inactive] undervote
+2023-01-15 01:58:06 EST FINE: [Round] 8 [CVR] 2015_portland_mayor_cvr.xlsx-61 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 8 [CVR] 2015_portland_mayor_cvr.xlsx-64 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 8 [CVR] 2015_portland_mayor_cvr.xlsx-71 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST INFO: Winning threshold set to 49.
+2023-01-15 01:58:06 EST INFO: Candidate "Duson, Jill C." got 8 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Mavodones, Nicholas M. Jr." got 26 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Lapchick, Jodie L." got 7 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Haadoow, Hamza A." got 8 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Carmona, Ralph C." got 13 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bryant, Peter G." got 11 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bragdon, Charles E." got 14 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Dodge, Richard A." got 10 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Lapchick, Jodie L." was eliminated in round 8 with 7 vote(s).
+2023-01-15 01:58:06 EST INFO: Round: 9
+2023-01-15 01:58:06 EST FINE: [Round] 9 [CVR] 2015_portland_mayor_cvr.xlsx-31 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 9 [CVR] 2015_portland_mayor_cvr.xlsx-45 [transferred to] Haadoow, Hamza A.
+2023-01-15 01:58:06 EST FINE: [Round] 9 [CVR] 2015_portland_mayor_cvr.xlsx-51 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 9 [CVR] 2015_portland_mayor_cvr.xlsx-72 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 9 [CVR] 2015_portland_mayor_cvr.xlsx-73 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 9 [CVR] 2015_portland_mayor_cvr.xlsx-75 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 9 [CVR] 2015_portland_mayor_cvr.xlsx-88 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST INFO: Winning threshold set to 49.
+2023-01-15 01:58:06 EST INFO: Candidate "Duson, Jill C." got 8 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Mavodones, Nicholas M. Jr." got 32 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Haadoow, Hamza A." got 9 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Carmona, Ralph C." got 13 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bryant, Peter G." got 11 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bragdon, Charles E." got 14 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Dodge, Richard A." got 10 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Duson, Jill C." was eliminated in round 9 with 8 vote(s).
+2023-01-15 01:58:06 EST INFO: Round: 10
+2023-01-15 01:58:06 EST FINE: [Round] 10 [CVR] 2015_portland_mayor_cvr.xlsx-2 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 10 [CVR] 2015_portland_mayor_cvr.xlsx-14 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 10 [CVR] 2015_portland_mayor_cvr.xlsx-34 [transferred to] Dodge, Richard A.
+2023-01-15 01:58:06 EST FINE: [Round] 10 [CVR] 2015_portland_mayor_cvr.xlsx-53 [transferred to] Bryant, Peter G.
+2023-01-15 01:58:06 EST FINE: [Round] 10 [CVR] 2015_portland_mayor_cvr.xlsx-54 [transferred to] Dodge, Richard A.
+2023-01-15 01:58:06 EST FINE: [Round] 10 [CVR] 2015_portland_mayor_cvr.xlsx-90 [transferred to] Dodge, Richard A.
+2023-01-15 01:58:06 EST FINE: [Round] 10 [CVR] 2015_portland_mayor_cvr.xlsx-92 [transferred to] Dodge, Richard A.
+2023-01-15 01:58:06 EST FINE: [Round] 10 [CVR] 2015_portland_mayor_cvr.xlsx-96 [transferred to] Dodge, Richard A.
+2023-01-15 01:58:06 EST INFO: Winning threshold set to 49.
+2023-01-15 01:58:06 EST INFO: Candidate "Mavodones, Nicholas M. Jr." got 34 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Haadoow, Hamza A." got 9 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Carmona, Ralph C." got 13 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bryant, Peter G." got 12 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bragdon, Charles E." got 14 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Dodge, Richard A." got 15 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Haadoow, Hamza A." was eliminated in round 10 with 9 vote(s).
+2023-01-15 01:58:06 EST INFO: Round: 11
+2023-01-15 01:58:06 EST FINE: [Round] 11 [CVR] 2015_portland_mayor_cvr.xlsx-1 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 11 [CVR] 2015_portland_mayor_cvr.xlsx-3 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 11 [CVR] 2015_portland_mayor_cvr.xlsx-19 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 11 [CVR] 2015_portland_mayor_cvr.xlsx-20 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 11 [CVR] 2015_portland_mayor_cvr.xlsx-45 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 11 [CVR] 2015_portland_mayor_cvr.xlsx-78 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 11 [CVR] 2015_portland_mayor_cvr.xlsx-91 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 11 [CVR] 2015_portland_mayor_cvr.xlsx-97 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 11 [CVR] 2015_portland_mayor_cvr.xlsx-99 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST INFO: Winning threshold set to 49.
+2023-01-15 01:58:06 EST INFO: Candidate "Mavodones, Nicholas M. Jr." got 41 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Carmona, Ralph C." got 15 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bryant, Peter G." got 12 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bragdon, Charles E." got 14 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Dodge, Richard A." got 15 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bryant, Peter G." was eliminated in round 11 with 12 vote(s).
+2023-01-15 01:58:06 EST INFO: Round: 12
+2023-01-15 01:58:06 EST FINE: [Round] 12 [CVR] 2015_portland_mayor_cvr.xlsx-6 [transferred to] Bragdon, Charles E.
+2023-01-15 01:58:06 EST FINE: [Round] 12 [CVR] 2015_portland_mayor_cvr.xlsx-7 [transferred to] Bragdon, Charles E.
+2023-01-15 01:58:06 EST FINE: [Round] 12 [CVR] 2015_portland_mayor_cvr.xlsx-12 [transferred to] Bragdon, Charles E.
+2023-01-15 01:58:06 EST FINE: [Round] 12 [CVR] 2015_portland_mayor_cvr.xlsx-29 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 12 [CVR] 2015_portland_mayor_cvr.xlsx-37 [transferred to] Bragdon, Charles E.
+2023-01-15 01:58:06 EST FINE: [Round] 12 [CVR] 2015_portland_mayor_cvr.xlsx-40 [transferred to] Bragdon, Charles E.
+2023-01-15 01:58:06 EST FINE: [Round] 12 [CVR] 2015_portland_mayor_cvr.xlsx-47 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 12 [CVR] 2015_portland_mayor_cvr.xlsx-53 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 12 [CVR] 2015_portland_mayor_cvr.xlsx-70 [transferred to] Bragdon, Charles E.
+2023-01-15 01:58:06 EST FINE: [Round] 12 [CVR] 2015_portland_mayor_cvr.xlsx-81 [transferred to] Bragdon, Charles E.
+2023-01-15 01:58:06 EST FINE: [Round] 12 [CVR] 2015_portland_mayor_cvr.xlsx-87 [transferred to] Bragdon, Charles E.
+2023-01-15 01:58:06 EST FINE: [Round] 12 [CVR] 2015_portland_mayor_cvr.xlsx-93 [transferred to] Bragdon, Charles E.
+2023-01-15 01:58:06 EST INFO: Winning threshold set to 49.
+2023-01-15 01:58:06 EST INFO: Candidate "Mavodones, Nicholas M. Jr." got 42 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Carmona, Ralph C." got 17 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bragdon, Charles E." got 23 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Dodge, Richard A." got 15 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Dodge, Richard A." was eliminated in round 12 with 15 vote(s).
+2023-01-15 01:58:06 EST INFO: Round: 13
+2023-01-15 01:58:06 EST FINE: [Round] 13 [CVR] 2015_portland_mayor_cvr.xlsx-23 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 13 [CVR] 2015_portland_mayor_cvr.xlsx-28 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 13 [CVR] 2015_portland_mayor_cvr.xlsx-34 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 13 [CVR] 2015_portland_mayor_cvr.xlsx-39 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 13 [CVR] 2015_portland_mayor_cvr.xlsx-54 [transferred to] Bragdon, Charles E.
+2023-01-15 01:58:06 EST FINE: [Round] 13 [CVR] 2015_portland_mayor_cvr.xlsx-57 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 13 [CVR] 2015_portland_mayor_cvr.xlsx-58 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 13 [CVR] 2015_portland_mayor_cvr.xlsx-59 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 13 [CVR] 2015_portland_mayor_cvr.xlsx-63 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 13 [CVR] 2015_portland_mayor_cvr.xlsx-76 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 13 [CVR] 2015_portland_mayor_cvr.xlsx-83 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 13 [CVR] 2015_portland_mayor_cvr.xlsx-90 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 13 [CVR] 2015_portland_mayor_cvr.xlsx-92 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 13 [CVR] 2015_portland_mayor_cvr.xlsx-94 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 13 [CVR] 2015_portland_mayor_cvr.xlsx-96 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST INFO: Winning threshold set to 49.
+2023-01-15 01:58:06 EST INFO: Candidate "Mavodones, Nicholas M. Jr." got 45 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Carmona, Ralph C." got 28 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bragdon, Charles E." got 24 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Bragdon, Charles E." was eliminated in round 13 with 24 vote(s).
+2023-01-15 01:58:06 EST INFO: Round: 14
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-5 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-6 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-7 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-8 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-11 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-12 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-26 [became inactive] overvote
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-32 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-33 [became inactive] overvote
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-35 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-37 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-40 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-43 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-48 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-54 [became inactive] undervote
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-65 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-69 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-70 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-77 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-81 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-87 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-89 [transferred to] Mavodones, Nicholas M. Jr.
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-93 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST FINE: [Round] 14 [CVR] 2015_portland_mayor_cvr.xlsx-98 [transferred to] Carmona, Ralph C.
+2023-01-15 01:58:06 EST INFO: Winning threshold set to 48.
+2023-01-15 01:58:06 EST INFO: Candidate "Mavodones, Nicholas M. Jr." got 54 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Carmona, Ralph C." got 40 vote(s).
+2023-01-15 01:58:06 EST INFO: Candidate "Mavodones, Nicholas M. Jr." was elected in round 14 with 54 votes.
+2023-01-15 01:58:06 EST INFO: Generating summary spreadsheet: C:\Users\Anthony Chan\Downloads\rctab_v1.3.0_windows\rcv\sample_input\2015_portland_mayor\output\2023-01-15_01-58-05_summary.csv...
+2023-01-15 01:58:06 EST INFO: Summary spreadsheet generated successfully.
+2023-01-15 01:58:06 EST INFO: Generating summary JSON file: C:\Users\Anthony Chan\Downloads\rctab_v1.3.0_windows\rcv\sample_input\2015_portland_mayor\output\2023-01-15_01-58-05_summary.json...
+2023-01-15 01:58:06 EST INFO: JSON file generated successfully.
+2023-01-15 01:58:06 EST INFO: Tabulation session completed.
+2023-01-15 01:58:06 EST INFO: Results written to: C:\Users\Anthony Chan\Downloads\rctab_v1.3.0_windows\rcv\sample_input\2015_portland_mayor\output
