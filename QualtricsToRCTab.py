@@ -322,10 +322,9 @@ class DialogAbout:
     def __init__(self, parent):
         about_info = wx.adv.AboutDialogInfo()
         about_info.SetName("Qualtrics to RCTab")
-        about_info.SetVersion("1.0")
-        about_info.SetDescription("Converts Qualtrics CSV files to ES&S CVR Excel Files and imports these into RCTab to tabulated ranked choice voting elections.")
+        about_info.SetVersion("0.1")
+        about_info.SetDescription("Converts Qualtrics CSV files to ES&S CVR Excel Files and imports these into RCTab to tabulate ranked choice voting elections.")
         about_info.SetWebSite("https://github.com/anthonyym/qualtrics-to-rctab")
-        about_info.AddDeveloper("Anthony Chan <achan@udel.edu>")
 
         wx.adv.AboutBox(about_info, parent)
 
