@@ -194,14 +194,14 @@ class WindowNew(wx.Dialog):
 
         self.row_1 = wx.FlexGridSizer(1, 3, 10, 10)
         self.row_1.Add(wx.StaticText(self, wx.ID_ANY, "Output Directory"), 0, wx.ALIGN_CENTER_VERTICAL | wx.ALIGN_RIGHT | wx.LEFT, 5)
-        self.m_dirPickerOutputDir = wx.DirPickerCtrl( self, wx.ID_ANY, "", u"Select the output directory", wx.DefaultPosition, wx.Size( 500,-1 ), wx.DIRP_DEFAULT_STYLE )
+        self.m_dirPickerOutputDir = wx.DirPickerCtrl( self, wx.ID_ANY, "", u"Select the output directory", wx.DefaultPosition, wx.Size( 400,-1 ), wx.DIRP_DEFAULT_STYLE )
         self.m_dirPickerOutputDir.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_WINDOW ) )
         self.row_1.Add(self.m_dirPickerOutputDir, 0, wx.RIGHT, 5)
         self.sizer_main.Add(self.row_1)
 
         self.row_2 = wx.FlexGridSizer(1, 3, 10, 10)
         self.row_2.Add(wx.StaticText(self, wx.ID_ANY, "RCTab Directory "), 0, wx.ALIGN_CENTER_VERTICAL | wx.ALIGN_RIGHT | wx.LEFT, 5)
-        self.m_dirPickerRCTab = wx.DirPickerCtrl( self, wx.ID_ANY, os.getcwd() + '\\rctab_v1.3.0_windows', u"Select 'rctab_v1.3.0_windows' directory containing RCTab", wx.DefaultPosition, wx.Size( 500,-1 ), wx.DIRP_DEFAULT_STYLE )
+        self.m_dirPickerRCTab = wx.DirPickerCtrl( self, wx.ID_ANY, os.getcwd() + '\\rctab_v1.3.0_windows', u"Select 'rctab_v1.3.0_windows' directory containing RCTab", wx.DefaultPosition, wx.Size( 400,-1 ), wx.DIRP_DEFAULT_STYLE )
         self.m_dirPickerRCTab.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_WINDOW ) )
         self.row_2.Add(self.m_dirPickerRCTab, 0, wx.RIGHT, 0)
         self.sizer_main.Add(self.row_2)
@@ -214,17 +214,13 @@ class WindowNew(wx.Dialog):
         self.sizer_main.AddGrowableCol(0)
         self.Layout()
 
-        self.SetTitle("Qualtrics CSV to ESS/CVR Excel Converter")
+        self.SetTitle("Qualtrics CSV to RCTab")
 
     def ui_browse_candidate_file(self, event):
         election_candidate_file = wx.FileDialog(self, "", os.getcwd(), "", "CSV file (*.csv)|*.csv|All files|*.*", wx.FD_OPEN | wx.FD_FILE_MUST_EXIST)
         if election_candidate_file.ShowModal() == wx.ID_CANCEL:
             return
         self.set_candidate_file(election_candidate_file.GetPath())
-        # if self.m_dirPickerOutputDir.GetPath() == "":
-        #     print('setting file')
-        #     filename = self.candidate_file.split('\\')[-1].replace('.csv', '')
-        #     self.m_dirPickerOutputDir.SetPath(os.getcwd() + "\\" + filename)
         self.ui_check_complete()
 
     def set_candidate_file(self, candidate_file):
@@ -254,7 +250,6 @@ class WindowNew(wx.Dialog):
                 progress_dialog.Destroy()
                 
                 rctab_output_dir = self.m_dirPickerOutputDir.GetPath() + '\\RCTab_Output'
-                # message = "\n\nNote: the folder 'RCTab_Output' contains the tabulated output from RCTab. The folder 'Intermediate_Output' contains the configuration JSON file and Excel file generated for each election, which is used as input to RCTab and may be ignored."
                 if wx.MessageDialog(self,
                 "Open tabulated output directory? \n\nOutputted to: \n\n" + rctab_output_dir,
                 caption="Conversion complete", style=wx.YES_NO | wx.YES_DEFAULT | wx.ICON_QUESTION).ShowModal() == wx.ID_YES:
