@@ -72,7 +72,7 @@ def make_json_config(input_csv, contest_name, candidates, output_folder):
         "tabulatorVersion": "1.3.0",
         "outputSettings": {
             "contestName": contest_name,
-            "outputDirectory": "RCTab_Output\\" + contest_name,
+            "outputDirectory": "RCTab_Output\\" + 'RCTab_Output_' + contest_name,
             "tabulateByPrecinct": False,
             "generateCdfJson": False
         },
@@ -102,10 +102,12 @@ def make_json_config(input_csv, contest_name, candidates, output_folder):
             "randomSeed": "1234"
         }
     }
+    output_json_path = output_folder + '\\' + contest_name + '.json'
     with open(output_folder + '\\' + contest_name + '.json', 'w', encoding='utf-8') as file:
         json.dump(output_dict, file, indent=4)
+    return(output_json_path)
 
-def qualtrics_to_ess(input_csv, progress_dialog, output_dir):
+def qualtrics_to_ess(input_csv, progress_dialog, output_dir, rctab_dir):
     '''Converts the input_csv into ESS/CVR format Excel files. Returns the folder location of the Excel files'''
     df = pd.read_csv(input_csv)
     # ignore row if all null
@@ -147,16 +149,21 @@ def qualtrics_to_ess(input_csv, progress_dialog, output_dir):
         election_name = q_col_names[0].split('_')[0]
         
         filename = input_csv.split('\\')[-1].replace('.csv', '')
-        output_folder = output_dir + '\\' + filename
-        filepath = output_folder + '\\' + filename + '_' + election_name + '.xlsx'
-        if not os.path.exists(output_folder):
-            os.makedirs(output_folder)
+        filepath = output_dir + '\\' + filename + '_' + election_name + '.xlsx'
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
         
         candidates = list(sub_df.iloc[0])
-        make_json_config(filepath, filename + '_' + election_name, candidates, output_folder)
+        contest_name = filename + '_' + election_name
+        output_json_path = make_json_config(filepath, contest_name, candidates, output_dir)
         progress_dialog.Update(0, "Reading ballots for election: " + election_name)
         ballot_list_to_excel(convert_to_ballots(sub_df, progress_dialog), filepath, filename + '_' + election_name)
-    return(output_folder)
+
+        # run RCTab via command line
+        rctab_dir += "\\rcv\\bin"
+        os.chdir(rctab_dir)
+        os.system("rcv -cli " + '"' + output_json_path + '"')
+    return(output_dir)
 
 class WindowNew(wx.Dialog):
     def __init__(self, *args, **kwds):
@@ -171,14 +178,14 @@ class WindowNew(wx.Dialog):
     def show_ui(self):
         self.label_candidate_file = wx.StaticText(self, wx.ID_ANY, "Qualtrics CSV File")
         self.text_ctrl_candidate_file = wx.TextCtrl(self, wx.ID_ANY, "", style=wx.TE_READONLY)
-        self.button_candidate_file_browse = wx.Button(self, wx.ID_ANY, "Browse...")
+        self.button_candidate_file_browse = wx.Button(self, wx.ID_ANY, "Browse")
         self.Bind(wx.EVT_BUTTON, self.ui_browse_candidate_file, self.button_candidate_file_browse)
 
         self.button_create = wx.Button(self, wx.ID_ANY, "Convert")
         self.Bind(wx.EVT_BUTTON, self.ui_convert, self.button_create)
         self.button_create.Enable(False)
 
-        self.sizer_main = wx.FlexGridSizer(3, 1, 5, 0)
+        self.sizer_main = wx.FlexGridSizer(4, 1, 5, 0)
 
         self.row_0 = wx.FlexGridSizer(1, 3, 5, 5)
         self.row_0.Add(self.label_candidate_file, 0, wx.ALIGN_CENTER_VERTICAL | wx.ALIGN_RIGHT | wx.LEFT, 5)
@@ -189,10 +196,17 @@ class WindowNew(wx.Dialog):
 
         self.row_1 = wx.FlexGridSizer(1, 3, 10, 10)
         self.row_1.Add(wx.StaticText(self, wx.ID_ANY, "Output Directory"), 0, wx.ALIGN_CENTER_VERTICAL | wx.ALIGN_RIGHT | wx.LEFT, 5)
-        self.m_dirPicker1 = wx.DirPickerCtrl( self, wx.ID_ANY, os.getcwd(), u"Select a folder", wx.DefaultPosition, wx.Size( 300,-1 ), wx.DIRP_DEFAULT_STYLE )
-        self.m_dirPicker1.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_WINDOW ) )
-        self.row_1.Add(self.m_dirPicker1, 0, wx.RIGHT, 5)
+        self.m_dirPickerOutputDir = wx.DirPickerCtrl( self, wx.ID_ANY, "", u"Select a folder", wx.DefaultPosition, wx.Size( 500,-1 ), wx.DIRP_DEFAULT_STYLE )
+        self.m_dirPickerOutputDir.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_WINDOW ) )
+        self.row_1.Add(self.m_dirPickerOutputDir, 0, wx.RIGHT, 5)
         self.sizer_main.Add(self.row_1)
+
+        self.row_2 = wx.FlexGridSizer(1, 3, 10, 10)
+        self.row_2.Add(wx.StaticText(self, wx.ID_ANY, "RCTab Directory "), 0, wx.ALIGN_CENTER_VERTICAL | wx.ALIGN_RIGHT | wx.LEFT, 5)
+        self.m_dirPickerRCTab = wx.DirPickerCtrl( self, wx.ID_ANY, os.getcwd() + '\\rctab_v1.3.0_windows', u"Select the 'rcv' directory of the RCTab", wx.DefaultPosition, wx.Size( 500,-1 ), wx.DIRP_DEFAULT_STYLE )
+        self.m_dirPickerRCTab.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_WINDOW ) )
+        self.row_2.Add(self.m_dirPickerRCTab, 0, wx.RIGHT, 0)
+        self.sizer_main.Add(self.row_2)
 
         self.sizer_main.Add(self.button_create, 0, wx.ALIGN_RIGHT | wx.BOTTOM | wx.RIGHT, 5)
 
@@ -209,6 +223,10 @@ class WindowNew(wx.Dialog):
         if election_candidate_file.ShowModal() == wx.ID_CANCEL:
             return
         self.set_candidate_file(election_candidate_file.GetPath())
+        if self.m_dirPickerOutputDir.GetPath() == "":
+            print('setting file')
+            filename = self.candidate_file.split('\\')[-1].replace('.csv', '')
+            self.m_dirPickerOutputDir.SetPath(os.getcwd() + "\\" + filename)
         self.ui_check_complete()
 
     def set_candidate_file(self, candidate_file):
@@ -218,22 +236,25 @@ class WindowNew(wx.Dialog):
     def ui_convert(self, event):
         if not self.is_valid_csv(self.candidate_file):
             wx.MessageDialog(self, "Unable to load Qualtrics CSV file. Please verify that the file specified is the correct file.", caption="Load Error", style=wx.OK | wx.ICON_ERROR | wx.CENTRE).ShowModal()
+        elif not os.path.exists(self.m_dirPickerRCTab.GetPath() + '\\rcv\\bin\\rcv'):
+            wx.MessageDialog(None, "Invalid path for RCTab Directory. Please select the folder 'rctab_v1.3.0_windows' for the RCTab Directory.", caption="Conversion failure", style=wx.OK | wx.ICON_ERROR | wx.CENTRE).ShowModal()
         else:
             try:
                 progress_dialog = wx.ProgressDialog("Processing Ballots", "", maximum=self.max_progress_dialog_value, parent=self, style=wx.PD_APP_MODAL | wx.PD_AUTO_HIDE | wx.PD_ELAPSED_TIME | wx.PD_ESTIMATED_TIME | wx.PD_REMAINING_TIME)
                 progress_dialog.Fit()
-                output_dir = qualtrics_to_ess(self.candidate_file, progress_dialog, self.m_dirPicker1.GetPath())
+                output_dir = qualtrics_to_ess(self.candidate_file, progress_dialog, self.m_dirPickerOutputDir.GetPath(), self.m_dirPickerRCTab.GetPath())
                 progress_dialog.Update(self.max_progress_dialog_value)
                 progress_dialog.Destroy()
                 
                 if wx.MessageDialog(self, "Conversion successful. \n\nOutputted to: \n\n" + output_dir, caption="Open outuptted files?", style=wx.YES_NO | wx.YES_DEFAULT | wx.ICON_QUESTION).ShowModal() == wx.ID_YES:
                     if platform.system() == "Windows":
-                        os.startfile(output_dir)
+                        os.startfile(output_dir + '\\RCTab_Output')
         
                 self.Close()
             except Exception as e:
-                wx.MessageDialog(self, "An unexpected error occurred.", caption="Conversion failure", style=wx.OK | wx.ICON_ERROR | wx.CENTRE).ShowModal()
                 progress_dialog.Destroy()
+                print(e)
+                wx.MessageDialog(self, "An unexpected error occurred.", caption="Conversion failure", style=wx.OK | wx.ICON_ERROR | wx.CENTRE).ShowModal()
 
     def is_valid_csv(self, input_csv):
         '''
