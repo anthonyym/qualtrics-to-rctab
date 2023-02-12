@@ -158,7 +158,6 @@ def qualtrics_to_ess(input_csv, progress_dialog, output_dir, rctab_dir):
         ballot_list_to_excel(convert_to_ballots(sub_df, progress_dialog), xls_filepath, filename + '_' + election_name)
 
         # run RCTab via command line
-        rctab_dir += "\\rcv\\bin"
         os.chdir(rctab_dir)
         os.system("rcv -cli " + '"' + output_json_path + '"')
     return(output_dir)
@@ -274,7 +273,8 @@ class WindowNew(wx.Frame):
                 if not os.path.exists(intermediate_dir):
                     os.makedirs(intermediate_dir)
                 
-                qualtrics_to_ess(self.candidate_file, progress_dialog, intermediate_dir, self.m_dirPickerRCTab.GetPath())
+                rctab_dir = self.m_dirPickerRCTab.GetPath() + "\\rcv\\bin"
+                qualtrics_to_ess(self.candidate_file, progress_dialog, intermediate_dir, rctab_dir)
                 
                 progress_dialog.Update(self.max_progress_dialog_value)
                 progress_dialog.Destroy()
